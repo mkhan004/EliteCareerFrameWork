@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default suite" parallel="false">
+	
+	<test verbose="3" name="Default test2">
+	<parameter name="email" value="test@test.com"></parameter>
+	<parameter name="password" value="365827"></parameter>
+		<classes>
+	
+			<class name="elitecareer.framework.tests.SignInPageTest">
+				<methods>
+				<include name="testSignInPageTitle"></include>
+					<include name="testEmailFieldWithWrongEmail"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	
+
+</suite> <!-- Default suite -->
+            
+            
