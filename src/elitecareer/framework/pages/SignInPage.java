@@ -7,6 +7,9 @@ import elitecareer.framework.base.PageBase;
 
 public class SignInPage extends PageBase{
 
+	@FindBy(linkText = "Signin")
+	public WebElement signInPageLink;
+	
 	@FindBy(id = "legend")
 	public WebElement signInTitle;
 	

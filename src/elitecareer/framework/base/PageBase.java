@@ -9,20 +9,19 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-public class PageBase {
+public class PageBase extends TestBase{
 	//WebDriver driver;
 	
-	public String getPageTitle(WebDriver driver){
+	public String getPageTitle(){
 		String title = driver.getTitle();
 		return title;
 	}
 	
-	public String getElementByName(WebDriver driver, String folderName){
+	public String getElementByName(String folderName){
 		String elementName = null;
 		List <WebElement> allFolders = driver.findElements(By.id("facebook_header"));
 		for(int i=0; i<allFolders.size(); i++){
@@ -33,7 +32,7 @@ public class PageBase {
 		return elementName;
 	}
 	
-	public String getErrorMessageByValue(WebDriver driver, String errorMessage){
+	public String getErrorMessageByValue(String errorMessage){
 		String elementName = null;
 		List <WebElement> allFolders = driver.findElements(By.id("error"));
 		for(int i=0; i<allFolders.size(); i++){
@@ -44,7 +43,7 @@ public class PageBase {
 		return elementName;
 	}
 	
-	public boolean verifyCurrentUrlSuffix(WebDriver driver, String suffix){
+	public boolean verifyCurrentUrlSuffix(String suffix){
 		return driver.getCurrentUrl().endsWith(suffix);
 	}
 	
@@ -52,16 +51,16 @@ public class PageBase {
 		new Select(element).selectByVisibleText(value);
 	}
 	
-	public void goToPreviousPage(WebDriver driver){
+	public void goToPreviousPage(){
 		driver.navigate().back();
 	}
 	
-	public void mouseOver(WebDriver driver, WebElement element){
+	public void mouseOver(WebElement element){
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element).build().perform();
 	}
 	
-	public void pageRefresh(WebDriver driver){
+	public void pageRefresh(){
 		driver.navigate().refresh();
 	}
 	

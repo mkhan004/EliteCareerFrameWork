@@ -36,5 +36,9 @@ public class PageHeader extends PageBase{
 	
 	@FindBy(id = "welcome_bar_style2")
 	public WebElement profileLink;
+	
+	public void goToSignInPage(){
+		signInPageLink.click();
+	}
 
 }

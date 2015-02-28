@@ -1,36 +1,29 @@
 package elitecareer.framework.tests;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import elitecareer.framework.base.TestBase;
 
 
 public class JobseekerProfilePageTest extends TestBase{
-
-	@BeforeTest
-	public void signInWithCorrectCredentials(){
+	
+	@Test(priority = 0)
+	public void testJobseekerProfileTitle(){
 		pageHeader.signInPageLink.click();
-		signInPage.emailField.clear();
-		signInPage.passwordField.clear();
 		signInPage.emailField.sendKeys("nurul@yahoo.com");
 		signInPage.passwordField.sendKeys("365827");
 		signInPage.submitButton.click();
-	}
-	
-	@Test
-	public void testJobseekerProfileTitle(){
-		//pageHeader.profileLink.click();
 		Assert.assertEquals(jobseekerProfilePage.profileTitle.getText(), "Career Profile");
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void testProfilePageLink(){
-		Assert.assertTrue(jobseekerProfilePage.verifyCurrentUrlSuffix(driver, "profile.php"));
+		Assert.assertTrue(jobseekerProfilePage.verifyCurrentUrlSuffix("profile.php"));
 	}
 	
-	@Test
+	@Test(priority = 3)
 	public void testProfileMenuTitle(){
 		Assert.assertEquals(jobseekerProfileMenu.profileMenuTitle.getText(), "Profile Menu");
 	}

@@ -1,39 +1,41 @@
 package elitecareer.framework.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import elitecareer.framework.base.TestBase;
 
 public class HomePageTest extends TestBase{
-
-	@Test
+	
+	@Test(priority = 0)
 	public void testHomePageTitle(){
-		Assert.assertEquals(homePage.getPageTitle(driver), "Job Search, Employment and Careers | EliteCareer");
+		Assert.assertEquals(homePage.getPageTitle(), "Job Search, Employment and Careers | EliteCareer");
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void testHomePageUrl(){
-		Assert.assertTrue(registerPage.verifyCurrentUrlSuffix(driver, "index.php"));
+		Assert.assertTrue(homePage.verifyCurrentUrlSuffix("index.php"));
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void testJobSearchTitle(){
 		Assert.assertEquals(homePage.jobSearchTitle.getText(), "Job Search");
 	}
 	
-	@Test
+	@Test(priority = 3)
 	public void testNewJobsTitle(){
 		Assert.assertEquals(homePage.newJobsTitle.getText(), "New Jobs");
 	}
 	
-	@Test
+	@Test(priority = 4)
 	public void testLinkedInPageTitle(){
-		Assert.assertEquals(homePage.getElementByName(driver, "LinkedIn Profile"), "LinkedIn Profile");
+		Assert.assertEquals(homePage.getElementByName("LinkedIn Profile"), "LinkedIn Profile");
 	}
 	
-	@Test
+	@Test(priority = 5, groups="Regression")
 	public void testFacebookPageTitle(){
-		Assert.assertEquals(homePage.getElementByName(driver, "Facebook Page"), "Facebook Page");
+		Assert.assertEquals(homePage.getElementByName("Facebook Page"), "Facebook Page");
+		
 	}
 }

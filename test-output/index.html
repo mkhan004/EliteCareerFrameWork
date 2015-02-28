@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results (by Shakil Khan)</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">67 methods,   67 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testDateOfBirthFieldWithInvalidInput">testDateOfBirthFieldWithInvalidInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.UpdatePersonalInformationPageTest" hash-for-method="testDateOfBirthFieldWithInvalidInput">testDateOfBirthFieldWithInvalidInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testDateOfBirthFieldWithValidInput">testDateOfBirthFieldWithValidInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.UpdatePersonalInformationPageTest" hash-for-method="testDateOfBirthFieldWithValidInput">testDateOfBirthFieldWithValidInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.UpdatePersonalInformationPageTest" hash-for-method="testEditPersonalInformationLink">testEditPersonalInformationLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testEmailFieldIfAlreadyRegistered">testEmailFieldIfAlreadyRegistered</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testEmailFieldWithEmptyEmail(365827)">testEmailFieldWithEmptyEmail(365827)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testEmailFieldWithEmptyEmail(365827)">testEmailFieldWithEmptyEmail(365827)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testEmailFieldWithWrongEmail(test@test.com, 365827)">testEmailFieldWithWrongEmail(test@test.com, 365827)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testEmailFieldWithWrongEmail(anothertest@test.com, 365827)">testEmailFieldWithWrongEmail(anothertest@test.com, 365827)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testEmptyFormSublission">testEmptyFormSublission</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.HomePageTest" hash-for-method="testFacebookPageTitle">testFacebookPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testFirstNameFieldAboveUpperBoundary">testFirstNameFieldAboveUpperBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.UpdatePersonalInformationPageTest" hash-for-method="testFirstNameFieldAboveUpperBoundary">testFirstNameFieldAboveUpperBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testFirstNameFieldBellowLowerBoundary">testFirstNameFieldBellowLowerBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.UpdatePersonalInformationPageTest" hash-for-method="testFirstNameFieldBellowLowerBoundary">testFirstNameFieldBellowLowerBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testFirstNameFieldLowerBoundary">testFirstNameFieldLowerBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.UpdatePersonalInformationPageTest" hash-for-method="testFirstNameFieldLowerBoundary">testFirstNameFieldLowerBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testFirstNameFieldUpperBoundary">testFirstNameFieldUpperBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.UpdatePersonalInformationPageTest" hash-for-method="testFirstNameFieldUpperBoundary">testFirstNameFieldUpperBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.HomePageTest" hash-for-method="testHomePageTitle">testHomePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.HomePageTest" hash-for-method="testHomePageUrl">testHomePageUrl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.HomePageTest" hash-for-method="testJobSearchTitle">testJobSearchTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.JobseekerProfilePageTest" hash-for-method="testJobseekerProfileTitle">testJobseekerProfileTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testLastNameFieldAboveUpperBoundary">testLastNameFieldAboveUpperBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.UpdatePersonalInformationPageTest" hash-for-method="testLastNameFieldAboveUpperBoundary">testLastNameFieldAboveUpperBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testLastNameFieldBellowLowerBoundary">testLastNameFieldBellowLowerBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.UpdatePersonalInformationPageTest" hash-for-method="testLastNameFieldBellowLowerBoundary">testLastNameFieldBellowLowerBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testLastNameFieldLowerBoundary">testLastNameFieldLowerBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.UpdatePersonalInformationPageTest" hash-for-method="testLastNameFieldLowerBoundary">testLastNameFieldLowerBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testLastNameFieldUpperBoundary">testLastNameFieldUpperBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.UpdatePersonalInformationPageTest" hash-for-method="testLastNameFieldUpperBoundary">testLastNameFieldUpperBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.HomePageTest" hash-for-method="testLinkedInPageTitle">testLinkedInPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.HomePageTest" hash-for-method="testNewJobsTitle">testNewJobsTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.UpdatePersonalInformationPageTest" hash-for-method="testPageTitle">testPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testPasswordAndConfirmPasswordFieldsIfDoNotMatch">testPasswordAndConfirmPasswordFieldsIfDoNotMatch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testPasswordFieldAboveUpperBoundary">testPasswordFieldAboveUpperBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testPasswordFieldBellowLowerBoundary">testPasswordFieldBellowLowerBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testPasswordFieldLowerBoundary">testPasswordFieldLowerBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testPasswordFieldUpperBoundary">testPasswordFieldUpperBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)">testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)">testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)">testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testPasswordFieldWithEmptyPassword(nurul@yahoo.com)">testPasswordFieldWithEmptyPassword(nurul@yahoo.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)">testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, dfghfhn)">testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, dfghfhn)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testPasswordFieldWithWrongPassword(nurul@yahoo.com, asadgfh)">testPasswordFieldWithWrongPassword(nurul@yahoo.com, asadgfh)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, 123456as)">testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, 123456as)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, 3656dgd)">testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, 3656dgd)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, mnhg344r)">testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, mnhg344r)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testPhoneNoFieldAboveUpperBoundary">testPhoneNoFieldAboveUpperBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testPhoneNoFieldBellowLowerBoundary">testPhoneNoFieldBellowLowerBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testPhoneNoFieldLowerBoundary">testPhoneNoFieldLowerBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testPhoneNoFieldUpperBoundary">testPhoneNoFieldUpperBoundary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.JobseekerProfilePageTest" hash-for-method="testProfileMenuTitle">testProfileMenuTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.JobseekerProfilePageTest" hash-for-method="testProfilePageLink">testProfilePageLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testRegisterPageTitle">testRegisterPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testRegisterPageUrl">testRegisterPageUrl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.RegisterPageTest" hash-for-method="testRegisterTitle">testRegisterTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testSignInPageTitle">testSignInPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testSignInPageUrl">testSignInPageUrl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testSignInTitle">testSignInTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testSignInWithCorrectCredentials(nurul@yahoo.com, 365827)">testSignInWithCorrectCredentials(nurul@yahoo.com, 365827)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testSignInWithCorrectCredentials(shakil_ipe@yahoo.com, 365827)">testSignInWithCorrectCredentials(shakil_ipe@yahoo.com, 365827)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.SignInPageTest" hash-for-method="testSignInWithEmptyCredentials">testSignInWithEmptyCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.UpdatePersonalInformationPageTest" hash-for-method="testUpdatePersonalInformationTitle">testUpdatePersonalInformationTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="elitecareer.framework.tests.UpdatePersonalInformationPageTest" hash-for-method="testUpdateWithAllValidData">testUpdateWithAllValidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">elitecareer.framework.tests.UpdatePersonalInformationPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDateOfBirthFieldWithInvalidInput">
+                  </a> <!-- testDateOfBirthFieldWithInvalidInput -->
+                  <span class="method-name">testDateOfBirthFieldWithInvalidInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDateOfBirthFieldWithValidInput">
+                  </a> <!-- testDateOfBirthFieldWithValidInput -->
+                  <span class="method-name">testDateOfBirthFieldWithValidInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditPersonalInformationLink">
+                  </a> <!-- testEditPersonalInformationLink -->
+                  <span class="method-name">testEditPersonalInformationLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFirstNameFieldAboveUpperBoundary">
+                  </a> <!-- testFirstNameFieldAboveUpperBoundary -->
+                  <span class="method-name">testFirstNameFieldAboveUpperBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFirstNameFieldBellowLowerBoundary">
+                  </a> <!-- testFirstNameFieldBellowLowerBoundary -->
+                  <span class="method-name">testFirstNameFieldBellowLowerBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFirstNameFieldLowerBoundary">
+                  </a> <!-- testFirstNameFieldLowerBoundary -->
+                  <span class="method-name">testFirstNameFieldLowerBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFirstNameFieldUpperBoundary">
+                  </a> <!-- testFirstNameFieldUpperBoundary -->
+                  <span class="method-name">testFirstNameFieldUpperBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLastNameFieldAboveUpperBoundary">
+                  </a> <!-- testLastNameFieldAboveUpperBoundary -->
+                  <span class="method-name">testLastNameFieldAboveUpperBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLastNameFieldBellowLowerBoundary">
+                  </a> <!-- testLastNameFieldBellowLowerBoundary -->
+                  <span class="method-name">testLastNameFieldBellowLowerBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLastNameFieldLowerBoundary">
+                  </a> <!-- testLastNameFieldLowerBoundary -->
+                  <span class="method-name">testLastNameFieldLowerBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLastNameFieldUpperBoundary">
+                  </a> <!-- testLastNameFieldUpperBoundary -->
+                  <span class="method-name">testLastNameFieldUpperBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPageTitle">
+                  </a> <!-- testPageTitle -->
+                  <span class="method-name">testPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdatePersonalInformationTitle">
+                  </a> <!-- testUpdatePersonalInformationTitle -->
+                  <span class="method-name">testUpdatePersonalInformationTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateWithAllValidData">
+                  </a> <!-- testUpdateWithAllValidData -->
+                  <span class="method-name">testUpdateWithAllValidData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">elitecareer.framework.tests.RegisterPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDateOfBirthFieldWithInvalidInput">
+                  </a> <!-- testDateOfBirthFieldWithInvalidInput -->
+                  <span class="method-name">testDateOfBirthFieldWithInvalidInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDateOfBirthFieldWithValidInput">
+                  </a> <!-- testDateOfBirthFieldWithValidInput -->
+                  <span class="method-name">testDateOfBirthFieldWithValidInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmailFieldIfAlreadyRegistered">
+                  </a> <!-- testEmailFieldIfAlreadyRegistered -->
+                  <span class="method-name">testEmailFieldIfAlreadyRegistered</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyFormSublission">
+                  </a> <!-- testEmptyFormSublission -->
+                  <span class="method-name">testEmptyFormSublission</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFirstNameFieldAboveUpperBoundary">
+                  </a> <!-- testFirstNameFieldAboveUpperBoundary -->
+                  <span class="method-name">testFirstNameFieldAboveUpperBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFirstNameFieldBellowLowerBoundary">
+                  </a> <!-- testFirstNameFieldBellowLowerBoundary -->
+                  <span class="method-name">testFirstNameFieldBellowLowerBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFirstNameFieldLowerBoundary">
+                  </a> <!-- testFirstNameFieldLowerBoundary -->
+                  <span class="method-name">testFirstNameFieldLowerBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFirstNameFieldUpperBoundary">
+                  </a> <!-- testFirstNameFieldUpperBoundary -->
+                  <span class="method-name">testFirstNameFieldUpperBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLastNameFieldAboveUpperBoundary">
+                  </a> <!-- testLastNameFieldAboveUpperBoundary -->
+                  <span class="method-name">testLastNameFieldAboveUpperBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLastNameFieldBellowLowerBoundary">
+                  </a> <!-- testLastNameFieldBellowLowerBoundary -->
+                  <span class="method-name">testLastNameFieldBellowLowerBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLastNameFieldLowerBoundary">
+                  </a> <!-- testLastNameFieldLowerBoundary -->
+                  <span class="method-name">testLastNameFieldLowerBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLastNameFieldUpperBoundary">
+                  </a> <!-- testLastNameFieldUpperBoundary -->
+                  <span class="method-name">testLastNameFieldUpperBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordAndConfirmPasswordFieldsIfDoNotMatch">
+                  </a> <!-- testPasswordAndConfirmPasswordFieldsIfDoNotMatch -->
+                  <span class="method-name">testPasswordAndConfirmPasswordFieldsIfDoNotMatch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldAboveUpperBoundary">
+                  </a> <!-- testPasswordFieldAboveUpperBoundary -->
+                  <span class="method-name">testPasswordFieldAboveUpperBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldBellowLowerBoundary">
+                  </a> <!-- testPasswordFieldBellowLowerBoundary -->
+                  <span class="method-name">testPasswordFieldBellowLowerBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldLowerBoundary">
+                  </a> <!-- testPasswordFieldLowerBoundary -->
+                  <span class="method-name">testPasswordFieldLowerBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldUpperBoundary">
+                  </a> <!-- testPasswordFieldUpperBoundary -->
+                  <span class="method-name">testPasswordFieldUpperBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneNoFieldAboveUpperBoundary">
+                  </a> <!-- testPhoneNoFieldAboveUpperBoundary -->
+                  <span class="method-name">testPhoneNoFieldAboveUpperBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneNoFieldBellowLowerBoundary">
+                  </a> <!-- testPhoneNoFieldBellowLowerBoundary -->
+                  <span class="method-name">testPhoneNoFieldBellowLowerBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneNoFieldLowerBoundary">
+                  </a> <!-- testPhoneNoFieldLowerBoundary -->
+                  <span class="method-name">testPhoneNoFieldLowerBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneNoFieldUpperBoundary">
+                  </a> <!-- testPhoneNoFieldUpperBoundary -->
+                  <span class="method-name">testPhoneNoFieldUpperBoundary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterPageTitle">
+                  </a> <!-- testRegisterPageTitle -->
+                  <span class="method-name">testRegisterPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterPageUrl">
+                  </a> <!-- testRegisterPageUrl -->
+                  <span class="method-name">testRegisterPageUrl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterTitle">
+                  </a> <!-- testRegisterTitle -->
+                  <span class="method-name">testRegisterTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">elitecareer.framework.tests.JobseekerProfilePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testJobseekerProfileTitle">
+                  </a> <!-- testJobseekerProfileTitle -->
+                  <span class="method-name">testJobseekerProfileTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProfileMenuTitle">
+                  </a> <!-- testProfileMenuTitle -->
+                  <span class="method-name">testProfileMenuTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProfilePageLink">
+                  </a> <!-- testProfilePageLink -->
+                  <span class="method-name">testProfilePageLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">elitecareer.framework.tests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFacebookPageTitle">
+                  </a> <!-- testFacebookPageTitle -->
+                  <span class="method-name">testFacebookPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomePageTitle">
+                  </a> <!-- testHomePageTitle -->
+                  <span class="method-name">testHomePageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomePageUrl">
+                  </a> <!-- testHomePageUrl -->
+                  <span class="method-name">testHomePageUrl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testJobSearchTitle">
+                  </a> <!-- testJobSearchTitle -->
+                  <span class="method-name">testJobSearchTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLinkedInPageTitle">
+                  </a> <!-- testLinkedInPageTitle -->
+                  <span class="method-name">testLinkedInPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewJobsTitle">
+                  </a> <!-- testNewJobsTitle -->
+                  <span class="method-name">testNewJobsTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">elitecareer.framework.tests.SignInPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmailFieldWithEmptyEmail(365827)">
+                  </a> <!-- testEmailFieldWithEmptyEmail(365827) -->
+                  <span class="method-name">testEmailFieldWithEmptyEmail</span>
+                  <span class="parameters">(365827)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmailFieldWithEmptyEmail(365827)">
+                  </a> <!-- testEmailFieldWithEmptyEmail(365827) -->
+                  <span class="method-name">testEmailFieldWithEmptyEmail</span>
+                  <span class="parameters">(365827)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmailFieldWithWrongEmail(test@test.com, 365827)">
+                  </a> <!-- testEmailFieldWithWrongEmail(test@test.com, 365827) -->
+                  <span class="method-name">testEmailFieldWithWrongEmail</span>
+                  <span class="parameters">(test@test.com, 365827)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmailFieldWithWrongEmail(anothertest@test.com, 365827)">
+                  </a> <!-- testEmailFieldWithWrongEmail(anothertest@test.com, 365827) -->
+                  <span class="method-name">testEmailFieldWithWrongEmail</span>
+                  <span class="parameters">(anothertest@test.com, 365827)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)">
+                  </a> <!-- testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com) -->
+                  <span class="method-name">testPasswordFieldWithEmptyPassword</span>
+                  <span class="parameters">(shakil_ipe@yahoo.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)">
+                  </a> <!-- testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com) -->
+                  <span class="method-name">testPasswordFieldWithEmptyPassword</span>
+                  <span class="parameters">(shakil_ipe@yahoo.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)">
+                  </a> <!-- testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com) -->
+                  <span class="method-name">testPasswordFieldWithEmptyPassword</span>
+                  <span class="parameters">(shakil_ipe@yahoo.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithEmptyPassword(nurul@yahoo.com)">
+                  </a> <!-- testPasswordFieldWithEmptyPassword(nurul@yahoo.com) -->
+                  <span class="method-name">testPasswordFieldWithEmptyPassword</span>
+                  <span class="parameters">(nurul@yahoo.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)">
+                  </a> <!-- testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com) -->
+                  <span class="method-name">testPasswordFieldWithEmptyPassword</span>
+                  <span class="parameters">(shakil_ipe@yahoo.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, dfghfhn)">
+                  </a> <!-- testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, dfghfhn) -->
+                  <span class="method-name">testPasswordFieldWithWrongPassword</span>
+                  <span class="parameters">(shakil_ipe@yahoo.com, dfghfhn)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithWrongPassword(nurul@yahoo.com, asadgfh)">
+                  </a> <!-- testPasswordFieldWithWrongPassword(nurul@yahoo.com, asadgfh) -->
+                  <span class="method-name">testPasswordFieldWithWrongPassword</span>
+                  <span class="parameters">(nurul@yahoo.com, asadgfh)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, 123456as)">
+                  </a> <!-- testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, 123456as) -->
+                  <span class="method-name">testPasswordFieldWithWrongPassword</span>
+                  <span class="parameters">(shakil_ipe@yahoo.com, 123456as)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, 3656dgd)">
+                  </a> <!-- testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, 3656dgd) -->
+                  <span class="method-name">testPasswordFieldWithWrongPassword</span>
+                  <span class="parameters">(shakil_ipe@yahoo.com, 3656dgd)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, mnhg344r)">
+                  </a> <!-- testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, mnhg344r) -->
+                  <span class="method-name">testPasswordFieldWithWrongPassword</span>
+                  <span class="parameters">(shakil_ipe@yahoo.com, mnhg344r)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignInPageTitle">
+                  </a> <!-- testSignInPageTitle -->
+                  <span class="method-name">testSignInPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignInPageUrl">
+                  </a> <!-- testSignInPageUrl -->
+                  <span class="method-name">testSignInPageUrl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignInTitle">
+                  </a> <!-- testSignInTitle -->
+                  <span class="method-name">testSignInTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignInWithCorrectCredentials(nurul@yahoo.com, 365827)">
+                  </a> <!-- testSignInWithCorrectCredentials(nurul@yahoo.com, 365827) -->
+                  <span class="method-name">testSignInWithCorrectCredentials</span>
+                  <span class="parameters">(nurul@yahoo.com, 365827)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignInWithCorrectCredentials(shakil_ipe@yahoo.com, 365827)">
+                  </a> <!-- testSignInWithCorrectCredentials(shakil_ipe@yahoo.com, 365827) -->
+                  <span class="method-name">testSignInWithCorrectCredentials</span>
+                  <span class="parameters">(shakil_ipe@yahoo.com, 365827)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignInWithEmptyCredentials">
+                  </a> <!-- testSignInWithEmptyCredentials -->
+                  <span class="method-name">testSignInWithEmptyCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/shakilkhan/Documents/EliteCareerFrameWork/EliteCareerFrameWork/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; parallel=&quot;classes&quot;&gt;
+  &lt;parameter name=&quot;browserType&quot; value=&quot;firefox&quot;/&gt;
+  &lt;parameter name=&quot;appURL&quot; value=&quot;http://localhost:8788/elitecareer/index.php&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;elitecareer.framework.listener.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;elitecareer.framework.tests.HomePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test1 --&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;elitecareer.framework.tests.SignInPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test2 --&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;elitecareer.framework.tests.RegisterPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test3 --&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;elitecareer.framework.tests.JobseekerProfilePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test4 --&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test5&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;elitecareer.framework.tests.UpdatePersonalInformationPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test5 --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Default test2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Default test3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Default test4 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Default test5 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testFacebookPageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSignInWithCorrectCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(67);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testJobseekerProfileTitle')
+data.setCell(0, 2, 'elitecareer.framework.tests.JobseekerProfilePageTest')
+data.setCell(0, 3, 12444);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testEmptyFormSublission')
+data.setCell(1, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(1, 3, 12383);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testSignInWithCorrectCredentials')
+data.setCell(2, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(2, 3, 8747);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testSignInWithCorrectCredentials')
+data.setCell(3, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(3, 3, 6585);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testPasswordFieldWithWrongPassword')
+data.setCell(4, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(4, 3, 5832);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testEmailFieldWithWrongEmail')
+data.setCell(5, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(5, 3, 5428);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testRegisterPageTitle')
+data.setCell(6, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(6, 3, 5402);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testEditPersonalInformationLink')
+data.setCell(7, 2, 'elitecareer.framework.tests.UpdatePersonalInformationPageTest')
+data.setCell(7, 3, 4332);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testPasswordFieldBellowLowerBoundary')
+data.setCell(8, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(8, 3, 3683);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testPasswordFieldLowerBoundary')
+data.setCell(9, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(9, 3, 3535);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testFirstNameFieldLowerBoundary')
+data.setCell(10, 2, 'elitecareer.framework.tests.UpdatePersonalInformationPageTest')
+data.setCell(10, 3, 3437);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testFirstNameFieldUpperBoundary')
+data.setCell(11, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(11, 3, 3282);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testPasswordFieldUpperBoundary')
+data.setCell(12, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(12, 3, 2889);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testEmailFieldWithEmptyEmail')
+data.setCell(13, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(13, 3, 2883);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testEmailFieldWithWrongEmail')
+data.setCell(14, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(14, 3, 2815);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testEmailFieldWithEmptyEmail')
+data.setCell(15, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(15, 3, 2801);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testFirstNameFieldLowerBoundary')
+data.setCell(16, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(16, 3, 2662);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testPhoneNoFieldAboveUpperBoundary')
+data.setCell(17, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(17, 3, 2597);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testPhoneNoFieldBellowLowerBoundary')
+data.setCell(18, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(18, 3, 2591);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testPasswordFieldWithWrongPassword')
+data.setCell(19, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(19, 3, 2469);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testFirstNameFieldUpperBoundary')
+data.setCell(20, 2, 'elitecareer.framework.tests.UpdatePersonalInformationPageTest')
+data.setCell(20, 3, 2466);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testLastNameFieldUpperBoundary')
+data.setCell(21, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(21, 3, 2416);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testPhoneNoFieldLowerBoundary')
+data.setCell(22, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(22, 3, 2374);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testEmailFieldIfAlreadyRegistered')
+data.setCell(23, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(23, 3, 2326);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testFirstNameFieldBellowLowerBoundary')
+data.setCell(24, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(24, 3, 2324);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testFirstNameFieldAboveUpperBoundary')
+data.setCell(25, 2, 'elitecareer.framework.tests.UpdatePersonalInformationPageTest')
+data.setCell(25, 3, 2229);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testPhoneNoFieldUpperBoundary')
+data.setCell(26, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(26, 3, 2167);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testUpdateWithAllValidData')
+data.setCell(27, 2, 'elitecareer.framework.tests.UpdatePersonalInformationPageTest')
+data.setCell(27, 3, 2151);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testLastNameFieldBellowLowerBoundary')
+data.setCell(28, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(28, 3, 2139);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testPasswordAndConfirmPasswordFieldsIfDoNotMatch')
+data.setCell(29, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(29, 3, 2049);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testLastNameFieldLowerBoundary')
+data.setCell(30, 2, 'elitecareer.framework.tests.UpdatePersonalInformationPageTest')
+data.setCell(30, 3, 2023);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testFirstNameFieldAboveUpperBoundary')
+data.setCell(31, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(31, 3, 1992);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testPasswordFieldWithEmptyPassword')
+data.setCell(32, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(32, 3, 1965);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testPasswordFieldWithWrongPassword')
+data.setCell(33, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(33, 3, 1868);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testPasswordFieldWithEmptyPassword')
+data.setCell(34, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(34, 3, 1856);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testPasswordFieldWithEmptyPassword')
+data.setCell(35, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(35, 3, 1814);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testLastNameFieldAboveUpperBoundary')
+data.setCell(36, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(36, 3, 1781);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testPasswordFieldWithEmptyPassword')
+data.setCell(37, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(37, 3, 1715);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testDateOfBirthFieldWithValidInput')
+data.setCell(38, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(38, 3, 1709);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testSignInTitle')
+data.setCell(39, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(39, 3, 1696);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testPasswordFieldAboveUpperBoundary')
+data.setCell(40, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(40, 3, 1637);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'testLastNameFieldLowerBoundary')
+data.setCell(41, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(41, 3, 1625);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'testDateOfBirthFieldWithValidInput')
+data.setCell(42, 2, 'elitecareer.framework.tests.UpdatePersonalInformationPageTest')
+data.setCell(42, 3, 1596);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'testDateOfBirthFieldWithInvalidInput')
+data.setCell(43, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(43, 3, 1595);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'testSignInWithEmptyCredentials')
+data.setCell(44, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(44, 3, 1539);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'testPasswordFieldWithWrongPassword')
+data.setCell(45, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(45, 3, 1539);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'testPasswordFieldWithEmptyPassword')
+data.setCell(46, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(46, 3, 1525);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'testFirstNameFieldBellowLowerBoundary')
+data.setCell(47, 2, 'elitecareer.framework.tests.UpdatePersonalInformationPageTest')
+data.setCell(47, 3, 1477);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'testPasswordFieldWithWrongPassword')
+data.setCell(48, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(48, 3, 1405);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'testLastNameFieldBellowLowerBoundary')
+data.setCell(49, 2, 'elitecareer.framework.tests.UpdatePersonalInformationPageTest')
+data.setCell(49, 3, 1188);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'testLastNameFieldUpperBoundary')
+data.setCell(50, 2, 'elitecareer.framework.tests.UpdatePersonalInformationPageTest')
+data.setCell(50, 3, 1168);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'testDateOfBirthFieldWithInvalidInput')
+data.setCell(51, 2, 'elitecareer.framework.tests.UpdatePersonalInformationPageTest')
+data.setCell(51, 3, 1136);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'testLastNameFieldAboveUpperBoundary')
+data.setCell(52, 2, 'elitecareer.framework.tests.UpdatePersonalInformationPageTest')
+data.setCell(52, 3, 1121);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'testSignInPageTitle')
+data.setCell(53, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(53, 3, 934);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'testJobSearchTitle')
+data.setCell(54, 2, 'elitecareer.framework.tests.HomePageTest')
+data.setCell(54, 3, 430);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'testLinkedInPageTitle')
+data.setCell(55, 2, 'elitecareer.framework.tests.HomePageTest')
+data.setCell(55, 3, 360);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'testSignInPageUrl')
+data.setCell(56, 2, 'elitecareer.framework.tests.SignInPageTest')
+data.setCell(56, 3, 170);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'testRegisterTitle')
+data.setCell(57, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(57, 3, 146);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'testRegisterPageUrl')
+data.setCell(58, 2, 'elitecareer.framework.tests.RegisterPageTest')
+data.setCell(58, 3, 142);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'testHomePageUrl')
+data.setCell(59, 2, 'elitecareer.framework.tests.HomePageTest')
+data.setCell(59, 3, 117);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'testFacebookPageTitle')
+data.setCell(60, 2, 'elitecareer.framework.tests.HomePageTest')
+data.setCell(60, 3, 93);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'testNewJobsTitle')
+data.setCell(61, 2, 'elitecareer.framework.tests.HomePageTest')
+data.setCell(61, 3, 81);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'testPageTitle')
+data.setCell(62, 2, 'elitecareer.framework.tests.UpdatePersonalInformationPageTest')
+data.setCell(62, 3, 63);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'testHomePageTitle')
+data.setCell(63, 2, 'elitecareer.framework.tests.HomePageTest')
+data.setCell(63, 3, 59);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'testUpdatePersonalInformationTitle')
+data.setCell(64, 2, 'elitecareer.framework.tests.UpdatePersonalInformationPageTest')
+data.setCell(64, 3, 47);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'testProfilePageLink')
+data.setCell(65, 2, 'elitecareer.framework.tests.JobseekerProfilePageTest')
+data.setCell(65, 3, 37);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'testProfileMenuTitle')
+data.setCell(66, 2, 'elitecareer.framework.tests.JobseekerProfilePageTest')
+data.setCell(66, 3, 31);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">elitecareer.framework.tests.RegisterPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testNewRegistration</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">elitecareer.framework.tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(firefox, http://localhost:8788/elitecareer/index.php)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testHomePageTitle</span>
+                <span class="method-start">12488 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testHomePageUrl</span>
+                <span class="method-start">12548 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testJobSearchTitle</span>
+                <span class="method-start">12666 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNewJobsTitle</span>
+                <span class="method-start">13097 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLinkedInPageTitle</span>
+                <span class="method-start">13179 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFacebookPageTitle</span>
+                <span class="method-start">13540 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13634 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">elitecareer.framework.tests.SignInPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(firefox, http://localhost:8788/elitecareer/index.php)</span>
+                <span class="method-start">13820 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testSignInPageTitle</span>
+                <span class="method-start">21474 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSignInPageUrl</span>
+                <span class="method-start">22409 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSignInTitle</span>
+                <span class="method-start">22580 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSignInWithEmptyCredentials</span>
+                <span class="method-start">24277 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmailFieldWithWrongEmail(test@test.com, 365827)</span>
+                <span class="method-start">26368 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmailFieldWithWrongEmail(anothertest@test.com, 365827)</span>
+                <span class="method-start">31798 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmailFieldWithEmptyEmail(365827)</span>
+                <span class="method-start">34634 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmailFieldWithEmptyEmail(365827)</span>
+                <span class="method-start">37517 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, 123456as)</span>
+                <span class="method-start">40399 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithWrongPassword(nurul@yahoo.com, asadgfh)</span>
+                <span class="method-start">46232 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, 3656dgd)</span>
+                <span class="method-start">48702 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, dfghfhn)</span>
+                <span class="method-start">50571 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithWrongPassword(shakil_ipe@yahoo.com, mnhg344r)</span>
+                <span class="method-start">51977 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)</span>
+                <span class="method-start">53558 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithEmptyPassword(nurul@yahoo.com)</span>
+                <span class="method-start">55275 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)</span>
+                <span class="method-start">57241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)</span>
+                <span class="method-start">58767 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithEmptyPassword(shakil_ipe@yahoo.com)</span>
+                <span class="method-start">60623 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSignInWithCorrectCredentials(shakil_ipe@yahoo.com, 365827)</span>
+                <span class="method-start">62456 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSignInWithCorrectCredentials(nurul@yahoo.com, 365827)</span>
+                <span class="method-start">69041 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">77789 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">elitecareer.framework.tests.RegisterPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(firefox, http://localhost:8788/elitecareer/index.php)</span>
+                <span class="method-start">79430 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testRegisterPageTitle</span>
+                <span class="method-start">115309 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegisterPageUrl</span>
+                <span class="method-start">120712 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegisterTitle</span>
+                <span class="method-start">120855 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmptyFormSublission</span>
+                <span class="method-start">121002 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFirstNameFieldBellowLowerBoundary</span>
+                <span class="method-start">133386 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFirstNameFieldLowerBoundary</span>
+                <span class="method-start">135711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFirstNameFieldAboveUpperBoundary</span>
+                <span class="method-start">138374 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFirstNameFieldUpperBoundary</span>
+                <span class="method-start">140367 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLastNameFieldBellowLowerBoundary</span>
+                <span class="method-start">143650 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLastNameFieldLowerBoundary</span>
+                <span class="method-start">145789 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLastNameFieldAboveUpperBoundary</span>
+                <span class="method-start">147415 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLastNameFieldUpperBoundary</span>
+                <span class="method-start">149197 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDateOfBirthFieldWithInvalidInput</span>
+                <span class="method-start">151614 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDateOfBirthFieldWithValidInput</span>
+                <span class="method-start">153209 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPhoneNoFieldBellowLowerBoundary</span>
+                <span class="method-start">154919 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPhoneNoFieldLowerBoundary</span>
+                <span class="method-start">157511 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPhoneNoFieldAboveUpperBoundary</span>
+                <span class="method-start">159886 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPhoneNoFieldUpperBoundary</span>
+                <span class="method-start">162484 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmailFieldIfAlreadyRegistered</span>
+                <span class="method-start">164652 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldBellowLowerBoundary</span>
+                <span class="method-start">166979 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldLowerBoundary</span>
+                <span class="method-start">170663 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldAboveUpperBoundary</span>
+                <span class="method-start">174199 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldUpperBoundary</span>
+                <span class="method-start">175837 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordAndConfirmPasswordFieldsIfDoNotMatch</span>
+                <span class="method-start">178728 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">180778 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">elitecareer.framework.tests.JobseekerProfilePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(firefox, http://localhost:8788/elitecareer/index.php)</span>
+                <span class="method-start">183857 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testJobseekerProfileTitle</span>
+                <span class="method-start">220887 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testProfilePageLink</span>
+                <span class="method-start">233332 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testProfileMenuTitle</span>
+                <span class="method-start">233370 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">233401 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">elitecareer.framework.tests.UpdatePersonalInformationPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(firefox, http://localhost:8788/elitecareer/index.php)</span>
+                <span class="method-start">233925 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testEditPersonalInformationLink</span>
+                <span class="method-start">249052 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPageTitle</span>
+                <span class="method-start">253386 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdatePersonalInformationTitle</span>
+                <span class="method-start">253450 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFirstNameFieldBellowLowerBoundary</span>
+                <span class="method-start">253498 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFirstNameFieldLowerBoundary</span>
+                <span class="method-start">254976 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFirstNameFieldAboveUpperBoundary</span>
+                <span class="method-start">258415 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFirstNameFieldUpperBoundary</span>
+                <span class="method-start">260645 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLastNameFieldBellowLowerBoundary</span>
+                <span class="method-start">263111 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLastNameFieldLowerBoundary</span>
+                <span class="method-start">264301 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLastNameFieldAboveUpperBoundary</span>
+                <span class="method-start">266325 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLastNameFieldUpperBoundary</span>
+                <span class="method-start">267447 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDateOfBirthFieldWithInvalidInput</span>
+                <span class="method-start">268616 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDateOfBirthFieldWithValidInput</span>
+                <span class="method-start">269752 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateWithAllValidData</span>
+                <span class="method-start">271349 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">273501 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

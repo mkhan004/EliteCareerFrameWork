@@ -14,4 +14,6 @@ public class HomePage extends PageBase{
 	public WebElement newJobsTitle;
 	
 
+	@FindBy(linkText = "home")
+	public WebElement homePageLink;
 }

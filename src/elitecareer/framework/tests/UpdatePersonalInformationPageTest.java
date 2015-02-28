@@ -1,133 +1,127 @@
 package elitecareer.framework.tests;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import elitecareer.framework.base.TestBase;
 
 public class UpdatePersonalInformationPageTest extends TestBase{
 
-	@BeforeTest
-	public void signInWithCorrectCredentials(){
+	@Test(priority = 0)
+	public void testEditPersonalInformationLink(){
 		pageHeader.signInPageLink.click();
-		signInPage.emailField.clear();
-		signInPage.passwordField.clear();
 		signInPage.emailField.sendKeys("nurul@yahoo.com");
 		signInPage.passwordField.sendKeys("365827");
 		signInPage.submitButton.click();
 		jobseekerProfilePage.editPersonalInformationLink.click();
+		Assert.assertTrue(updatePersonalInformationPage.verifyCurrentUrlSuffix("edit_user.php"));
 	}
 	
-	@Test
-	public void testEditPersonalInformationLink(){
-		Assert.assertTrue(updatePersonalInformationPage.verifyCurrentUrlSuffix(driver, "edit_user.php"));
-	}
-	
-	@Test
+	@Test(priority = 1)
 	public void testPageTitle(){
-		Assert.assertEquals(updatePersonalInformationPage.getPageTitle(driver), "Edit Personal Information | EliteCareer");
+		Assert.assertEquals(updatePersonalInformationPage.getPageTitle(), "Edit Personal Information | EliteCareer");
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void testUpdatePersonalInformationTitle(){
 		Assert.assertEquals(updatePersonalInformationPage.updatePersonalInformationTitle.getText(), "Update Personal Information");
 	}
 	
-	@Test
+	@Test(priority = 3)
 	public void testFirstNameFieldBellowLowerBoundary(){
 		updatePersonalInformationPage.firstNameField.clear();
 		updatePersonalInformationPage.firstNameField.sendKeys("a");
 		updatePersonalInformationPage.submitButton.click();
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* FirstName can not be less than 2 character."), "* FirstName can not be less than 2 character.");
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* FirstName can not be less than 2 character."), "* FirstName can not be less than 2 character.");
 	}
 	
-	@Test
+	@Test(priority = 4)
 	public void testFirstNameFieldLowerBoundary(){
 		updatePersonalInformationPage.firstNameField.clear();
 		updatePersonalInformationPage.firstNameField.sendKeys("as");
 		updatePersonalInformationPage.submitButton.click();
 		Assert.assertEquals(updatePersonalInformationPage.updateConfirmation.getText(), "Update is Successful!");
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* FirstName can not be less than 2 character."), null);
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* FirstName can not be greater than 30 character."), null);
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* FirstName can not be empty."), null);
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* FirstName can not be less than 2 character."), null);
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* FirstName can not be greater than 30 character."), null);
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* FirstName can not be empty."), null);
 	}
 	
-	@Test
+	@Test(priority = 5)
 	public void testFirstNameFieldAboveUpperBoundary(){
 		updatePersonalInformationPage.firstNameField.clear();
 		updatePersonalInformationPage.firstNameField.sendKeys("anhgfdsaetyun mjhgfds nbvfg bhgfts");
 		registerPage.submitButton.click();
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* FirstName can not be greater than 30 character."), "* FirstName can not be greater than 30 character.");
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* FirstName can not be greater than 30 character."), "* FirstName can not be greater than 30 character.");
 	}
 	
-	@Test
+	@Test(priority = 6)
 	public void testFirstNameFieldUpperBoundary(){
 		updatePersonalInformationPage.firstNameField.clear();
 		updatePersonalInformationPage.firstNameField.sendKeys("anhgfdsaetyun mjhgfds nbvfg bh");
 		updatePersonalInformationPage.submitButton.click();
 		Assert.assertEquals(updatePersonalInformationPage.updateConfirmation.getText(), "Update is Successful!");
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* FirstName can not be less than 2 character."), null);
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* FirstName can not be greater than 30 character."), null);
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* FirstName can not be empty."), null);
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* FirstName can not be less than 2 character."), null);
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* FirstName can not be greater than 30 character."), null);
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* FirstName can not be empty."), null);
 	}
 	
-	@Test
+	@Test(priority = 7)
 	public void testLastNameFieldBellowLowerBoundary(){
 		updatePersonalInformationPage.lastNameField.clear();
 		updatePersonalInformationPage.lastNameField.sendKeys("a");
 		updatePersonalInformationPage.submitButton.click();
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* LastName can not be less than 2 character."), "* LastName can not be less than 2 character.");
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* LastName can not be less than 2 character."), "* LastName can not be less than 2 character.");
 	}
 	
-	@Test
+	@Test(priority = 8)
 	public void testLastNameFieldLowerBoundary(){
 		updatePersonalInformationPage.lastNameField.clear();
 		updatePersonalInformationPage.lastNameField.sendKeys("as");
 		updatePersonalInformationPage.submitButton.click();
 		Assert.assertEquals(updatePersonalInformationPage.updateConfirmation.getText(), "Update is Successful!");
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* LastName can not be less than 2 character."), null);
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* LastName can not be greater than 30 character."), null);
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* LastName can not be empty."), null);
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* LastName can not be less than 2 character."), null);
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* LastName can not be greater than 30 character."), null);
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* LastName can not be empty."), null);
 	}
 	
-	@Test
+	@Test(priority = 9)
 	public void testLastNameFieldAboveUpperBoundary(){
 		updatePersonalInformationPage.lastNameField.clear();
 		updatePersonalInformationPage.lastNameField.sendKeys("anhgfdsaetyun mjhgfds nbvfg bhgfts");
 		updatePersonalInformationPage.submitButton.click();
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* LastName can not be greater than 30 character."), "* LastName can not be greater than 30 character.");
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* LastName can not be greater than 30 character."), "* LastName can not be greater than 30 character.");
 	}
 	
-	@Test
+	@Test(priority = 10)
 	public void testLastNameFieldUpperBoundary(){
 		updatePersonalInformationPage.lastNameField.clear();
 		updatePersonalInformationPage.lastNameField.sendKeys("anhgfdsaetyun mjhgfds nbvfg bh");
 		updatePersonalInformationPage.submitButton.click();
 		Assert.assertEquals(updatePersonalInformationPage.updateConfirmation.getText(), "Update is Successful!");
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* LastName can not be less than 2 character."), null);
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* LastName can not be greater than 30 character."), null);
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* LastName can not be empty."), null);
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* LastName can not be less than 2 character."), null);
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* LastName can not be greater than 30 character."), null);
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* LastName can not be empty."), null);
 	}
 	
-	@Test
+	@Test(priority = 11)
 	public void testDateOfBirthFieldWithInvalidInput(){
 		updatePersonalInformationPage.dateOfBirthField.clear();
 		updatePersonalInformationPage.dateOfBirthField.sendKeys("1985-18-30");
 		updatePersonalInformationPage.submitButton.click();
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* Invalid DateOfBirth"), "* Invalid DateOfBirth");
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* Invalid DateOfBirth"), "* Invalid DateOfBirth");
 	}
 	
-	@Test
+	@Test(priority = 12)
 	public void testDateOfBirthFieldWithValidInput(){
 		updatePersonalInformationPage.dateOfBirthField.clear();
 		updatePersonalInformationPage.dateOfBirthField.sendKeys("1985-12-30");
 		updatePersonalInformationPage.submitButton.click();
 		Assert.assertEquals(updatePersonalInformationPage.updateConfirmation.getText(), "Update is Successful!");
-		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue(driver, "* Invalid DateOfBirth"), null);
+		Assert.assertEquals(updatePersonalInformationPage.getErrorMessageByValue("* Invalid DateOfBirth"), null);
 	}
 	
-	@Test(dependsOnMethods = {"testFirstNameFieldLowerBoundary", "testFirstNameFieldUpperBoundary", "testLastNameFieldLowerBoundary", "testLastNameFieldUpperBoundary"})
+	@Test(priority = 13)
 	public void testUpdateWithAllValidData(){
 		updatePersonalInformationPage.firstNameField.clear();
 		updatePersonalInformationPage.lastNameField.clear();
