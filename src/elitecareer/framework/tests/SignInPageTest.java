@@ -2,11 +2,13 @@ package elitecareer.framework.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import elitecareer.framework.base.TestBase;
 import elitecareer.framework.dataprovider.TestDataProvider;
 
+@Listeners(elitecareer.framework.listener.JyperionListener.class)
 public class SignInPageTest extends TestBase{
 
 	

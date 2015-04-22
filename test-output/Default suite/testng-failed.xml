@@ -1,87 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" parallel="classes">
+<suite name="Failed suite [Default suite]">
   <parameter name="appURL" value="http://localhost:8788/elitecareer/index.php"/>
   <parameter name="browserType" value="firefox"/>
-  <listeners>
-    <listener class-name="elitecareer.framework.listener.TestListener"/>
-  </listeners>
-  <test name="Default test1(failed)" parallel="classes">
+  <test name="Default test(failed)">
     <classes>
+      <class name="elitecareer.framework.tests.JobseekerProfilePageTest">
+        <methods>
+          <include name="sendMail"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- elitecareer.framework.tests.JobseekerProfilePageTest -->
+      <class name="elitecareer.framework.tests.RegisterPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- elitecareer.framework.tests.RegisterPageTest -->
       <class name="elitecareer.framework.tests.UpdatePersonalInformationPageTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="signInWithCorrectCredentials"/>
         </methods>
       </class> <!-- elitecareer.framework.tests.UpdatePersonalInformationPageTest -->
       <class name="elitecareer.framework.tests.SignInPageTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="setUp3"/>
         </methods>
       </class> <!-- elitecareer.framework.tests.SignInPageTest -->
-      <class name="elitecareer.framework.tests.JobseekerProfilePageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="signInWithCorrectCredentials"/>
-        </methods>
-      </class> <!-- elitecareer.framework.tests.JobseekerProfilePageTest -->
       <class name="elitecareer.framework.tests.HomePageTest">
         <methods>
+          <include name="testFacebookPageTitle"/>
           <include name="testJobSearchTitle"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- elitecareer.framework.tests.HomePageTest -->
-      <class name="elitecareer.framework.tests.RegisterPageTest">
-        <methods>
-          <include name="setUp2"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- elitecareer.framework.tests.RegisterPageTest -->
     </classes>
-  </test> <!-- Default test1(failed) -->
-  <test name="Default test3(failed)" parallel="classes">
-    <classes>
-      <class name="elitecareer.framework.tests.UpdatePersonalInformationPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="signInWithCorrectCredentials"/>
-        </methods>
-      </class> <!-- elitecareer.framework.tests.UpdatePersonalInformationPageTest -->
-      <class name="elitecareer.framework.tests.SignInPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="setUp3"/>
-        </methods>
-      </class> <!-- elitecareer.framework.tests.SignInPageTest -->
-      <class name="elitecareer.framework.tests.JobseekerProfilePageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="signInWithCorrectCredentials"/>
-        </methods>
-      </class> <!-- elitecareer.framework.tests.JobseekerProfilePageTest -->
-      <class name="elitecareer.framework.tests.HomePageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- elitecareer.framework.tests.HomePageTest -->
-      <class name="elitecareer.framework.tests.RegisterPageTest">
-        <methods>
-          <include name="setUp2"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="testNewRegistration"/>
-        </methods>
-      </class> <!-- elitecareer.framework.tests.RegisterPageTest -->
-    </classes>
-  </test> <!-- Default test3(failed) -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

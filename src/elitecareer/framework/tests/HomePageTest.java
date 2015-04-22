@@ -1,11 +1,13 @@
 package elitecareer.framework.tests;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import elitecareer.framework.base.TestBase;
 
+//@Listeners(value={elitecareer.framework.listener.TestReporter.class, elitecareer.framework.listener.PassedTestReport.class})
+@Listeners(elitecareer.framework.listener.JyperionListener.class)
 public class HomePageTest extends TestBase{
 	
 	@Test(priority = 0)
@@ -20,7 +22,7 @@ public class HomePageTest extends TestBase{
 	
 	@Test(priority = 2)
 	public void testJobSearchTitle(){
-		Assert.assertEquals(homePage.jobSearchTitle.getText(), "Job Search");
+		Assert.assertEquals(homePage.jobSearchTitle.getText(), "Job Searchs");
 	}
 	
 	@Test(priority = 3)
@@ -35,7 +37,7 @@ public class HomePageTest extends TestBase{
 	
 	@Test(priority = 5, groups="Regression")
 	public void testFacebookPageTitle(){
-		Assert.assertEquals(homePage.getElementByName("Facebook Page"), "Facebook Page");
+		Assert.assertEquals(homePage.getElementByName("Facebook Page"), "Facebook Pagee");
 		
 	}
 }

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="67" passed="67">
+<testng-results skipped="0" failed="2" total="67" passed="65">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="274169" started-at="2015-02-28T00:24:13Z" finished-at="2015-02-28T00:28:47Z">
+  <suite name="Default suite" duration-ms="705812" started-at="2015-04-16T23:19:56Z" finished-at="2015-04-16T23:31:42Z">
     <groups>
       <group name="Regression">
-        <method signature="HomePageTest.testFacebookPageTitle()[pri:0, instance:elitecareer.framework.tests.HomePageTest@79845505]" name="testFacebookPageTitle" class="elitecareer.framework.tests.HomePageTest"/>
-        <method signature="SignInPageTest.testSignInWithCorrectCredentials(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testSignInWithCorrectCredentials" class="elitecareer.framework.tests.SignInPageTest"/>
+        <method signature="HomePageTest.testFacebookPageTitle()[pri:0, instance:elitecareer.framework.tests.HomePageTest@5f3c750c]" name="testFacebookPageTitle" class="elitecareer.framework.tests.HomePageTest"/>
+        <method signature="SignInPageTest.testSignInWithCorrectCredentials(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testSignInWithCorrectCredentials" class="elitecareer.framework.tests.SignInPageTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="Default test1" duration-ms="13748" started-at="2015-02-28T00:24:13Z" finished-at="2015-02-28T00:24:26Z">
-      <class name="elitecareer.framework.tests.HomePageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.HomePageTest@79845505]" name="setUp" is-config="true" duration-ms="12485" started-at="2015-02-27T19:24:13Z" finished-at="2015-02-27T19:24:25Z">
+    <test name="Default test" duration-ms="705812" started-at="2015-04-16T23:19:56Z" finished-at="2015-04-16T23:31:42Z">
+      <class name="elitecareer.framework.tests.RegisterPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="setUp" is-config="true" duration-ms="23630" started-at="2015-04-16T19:22:33Z" finished-at="2015-04-16T19:22:57Z">
           <params>
             <param index="0">
               <value>
@@ -27,39 +27,233 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testHomePageTitle()[pri:0, instance:elitecareer.framework.tests.HomePageTest@79845505]" name="testHomePageTitle" duration-ms="59" started-at="2015-02-27T19:24:25Z" finished-at="2015-02-27T19:24:25Z">
+        <test-method status="PASS" signature="testRegisterPageTitle()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testRegisterPageTitle" duration-ms="4358" started-at="2015-04-16T19:22:57Z" finished-at="2015-04-16T19:23:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterPageTitle -->
+        <test-method status="PASS" signature="testRegisterPageUrl()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testRegisterPageUrl" duration-ms="208" started-at="2015-04-16T19:23:01Z" finished-at="2015-04-16T19:23:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterPageUrl -->
+        <test-method status="PASS" signature="testRegisterTitle()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testRegisterTitle" duration-ms="503" started-at="2015-04-16T19:23:02Z" finished-at="2015-04-16T19:23:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterTitle -->
+        <test-method status="PASS" signature="testEmptyFormSublission()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testEmptyFormSublission" duration-ms="21937" started-at="2015-04-16T19:23:02Z" finished-at="2015-04-16T19:23:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyFormSublission -->
+        <test-method status="PASS" signature="testFirstNameFieldBellowLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testFirstNameFieldBellowLowerBoundary" duration-ms="4255" started-at="2015-04-16T19:23:24Z" finished-at="2015-04-16T19:23:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstNameFieldBellowLowerBoundary -->
+        <test-method status="PASS" signature="testFirstNameFieldLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testFirstNameFieldLowerBoundary" duration-ms="9356" started-at="2015-04-16T19:23:28Z" finished-at="2015-04-16T19:23:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstNameFieldLowerBoundary -->
+        <test-method status="PASS" signature="testFirstNameFieldAboveUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testFirstNameFieldAboveUpperBoundary" duration-ms="4238" started-at="2015-04-16T19:23:38Z" finished-at="2015-04-16T19:23:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstNameFieldAboveUpperBoundary -->
+        <test-method status="PASS" signature="testFirstNameFieldUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testFirstNameFieldUpperBoundary" duration-ms="6528" started-at="2015-04-16T19:23:42Z" finished-at="2015-04-16T19:23:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstNameFieldUpperBoundary -->
+        <test-method status="PASS" signature="testLastNameFieldBellowLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testLastNameFieldBellowLowerBoundary" duration-ms="4263" started-at="2015-04-16T19:23:48Z" finished-at="2015-04-16T19:23:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLastNameFieldBellowLowerBoundary -->
+        <test-method status="PASS" signature="testLastNameFieldLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testLastNameFieldLowerBoundary" duration-ms="6098" started-at="2015-04-16T19:23:53Z" finished-at="2015-04-16T19:23:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLastNameFieldLowerBoundary -->
+        <test-method status="PASS" signature="testLastNameFieldAboveUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testLastNameFieldAboveUpperBoundary" duration-ms="5204" started-at="2015-04-16T19:23:59Z" finished-at="2015-04-16T19:24:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLastNameFieldAboveUpperBoundary -->
+        <test-method status="PASS" signature="testLastNameFieldUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testLastNameFieldUpperBoundary" duration-ms="5416" started-at="2015-04-16T19:24:04Z" finished-at="2015-04-16T19:24:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLastNameFieldUpperBoundary -->
+        <test-method status="PASS" signature="testDateOfBirthFieldWithInvalidInput()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testDateOfBirthFieldWithInvalidInput" duration-ms="3666" started-at="2015-04-16T19:24:09Z" finished-at="2015-04-16T19:24:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateOfBirthFieldWithInvalidInput -->
+        <test-method status="PASS" signature="testDateOfBirthFieldWithValidInput()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testDateOfBirthFieldWithValidInput" duration-ms="3391" started-at="2015-04-16T19:24:13Z" finished-at="2015-04-16T19:24:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateOfBirthFieldWithValidInput -->
+        <test-method status="PASS" signature="testPhoneNoFieldBellowLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testPhoneNoFieldBellowLowerBoundary" duration-ms="8097" started-at="2015-04-16T19:24:17Z" finished-at="2015-04-16T19:24:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPhoneNoFieldBellowLowerBoundary -->
+        <test-method status="PASS" signature="testPhoneNoFieldLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testPhoneNoFieldLowerBoundary" duration-ms="16643" started-at="2015-04-16T19:24:25Z" finished-at="2015-04-16T19:24:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPhoneNoFieldLowerBoundary -->
+        <test-method status="PASS" signature="testPhoneNoFieldAboveUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testPhoneNoFieldAboveUpperBoundary" duration-ms="12554" started-at="2015-04-16T19:24:41Z" finished-at="2015-04-16T19:24:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPhoneNoFieldAboveUpperBoundary -->
+        <test-method status="PASS" signature="testPhoneNoFieldUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testPhoneNoFieldUpperBoundary" duration-ms="22127" started-at="2015-04-16T19:24:54Z" finished-at="2015-04-16T19:25:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPhoneNoFieldUpperBoundary -->
+        <test-method status="PASS" signature="testEmailFieldIfAlreadyRegistered()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testEmailFieldIfAlreadyRegistered" duration-ms="5147" started-at="2015-04-16T19:25:16Z" finished-at="2015-04-16T19:25:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmailFieldIfAlreadyRegistered -->
+        <test-method status="PASS" signature="testPasswordFieldBellowLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testPasswordFieldBellowLowerBoundary" duration-ms="7400" started-at="2015-04-16T19:25:21Z" finished-at="2015-04-16T19:25:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordFieldBellowLowerBoundary -->
+        <test-method status="PASS" signature="testPasswordFieldLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testPasswordFieldLowerBoundary" duration-ms="8786" started-at="2015-04-16T19:25:29Z" finished-at="2015-04-16T19:25:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordFieldLowerBoundary -->
+        <test-method status="PASS" signature="testPasswordFieldAboveUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testPasswordFieldAboveUpperBoundary" duration-ms="3922" started-at="2015-04-16T19:25:37Z" finished-at="2015-04-16T19:25:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordFieldAboveUpperBoundary -->
+        <test-method status="PASS" signature="testPasswordFieldUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testPasswordFieldUpperBoundary" duration-ms="7047" started-at="2015-04-16T19:25:41Z" finished-at="2015-04-16T19:25:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordFieldUpperBoundary -->
+        <test-method status="PASS" signature="testPasswordAndConfirmPasswordFieldsIfDoNotMatch()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="testPasswordAndConfirmPasswordFieldsIfDoNotMatch" duration-ms="115847" started-at="2015-04-16T19:25:48Z" finished-at="2015-04-16T19:27:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordAndConfirmPasswordFieldsIfDoNotMatch -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@456c9182]" name="tearDown" is-config="true" duration-ms="1206" started-at="2015-04-16T19:27:44Z" finished-at="2015-04-16T19:27:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- elitecareer.framework.tests.RegisterPageTest -->
+      <class name="elitecareer.framework.tests.HomePageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.HomePageTest@5f3c750c]" name="setUp" is-config="true" duration-ms="54042" started-at="2015-04-16T19:20:00Z" finished-at="2015-04-16T19:20:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost:8788/elitecareer/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testHomePageTitle()[pri:0, instance:elitecareer.framework.tests.HomePageTest@5f3c750c]" name="testHomePageTitle" duration-ms="167" started-at="2015-04-16T19:20:55Z" finished-at="2015-04-16T19:20:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageTitle -->
-        <test-method status="PASS" signature="testHomePageUrl()[pri:0, instance:elitecareer.framework.tests.HomePageTest@79845505]" name="testHomePageUrl" duration-ms="117" started-at="2015-02-27T19:24:25Z" finished-at="2015-02-27T19:24:25Z">
+        <test-method status="PASS" signature="testHomePageUrl()[pri:0, instance:elitecareer.framework.tests.HomePageTest@5f3c750c]" name="testHomePageUrl" duration-ms="20" started-at="2015-04-16T19:20:55Z" finished-at="2015-04-16T19:20:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageUrl -->
-        <test-method status="PASS" signature="testJobSearchTitle()[pri:0, instance:elitecareer.framework.tests.HomePageTest@79845505]" name="testJobSearchTitle" duration-ms="430" started-at="2015-02-27T19:24:25Z" finished-at="2015-02-27T19:24:26Z">
+        <test-method status="FAIL" signature="testJobSearchTitle()[pri:0, instance:elitecareer.framework.tests.HomePageTest@5f3c750c]" name="testJobSearchTitle" duration-ms="553" started-at="2015-04-16T19:20:55Z" finished-at="2015-04-16T19:20:55Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Job Searchs] but found [Job Search]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Job Searchs] but found [Job Search]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at elitecareer.framework.tests.HomePageTest.testJobSearchTitle(HomePageTest.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testJobSearchTitle -->
-        <test-method status="PASS" signature="testNewJobsTitle()[pri:0, instance:elitecareer.framework.tests.HomePageTest@79845505]" name="testNewJobsTitle" duration-ms="81" started-at="2015-02-27T19:24:26Z" finished-at="2015-02-27T19:24:26Z">
+        <test-method status="PASS" signature="testNewJobsTitle()[pri:0, instance:elitecareer.framework.tests.HomePageTest@5f3c750c]" name="testNewJobsTitle" duration-ms="289" started-at="2015-04-16T19:20:56Z" finished-at="2015-04-16T19:20:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNewJobsTitle -->
-        <test-method status="PASS" signature="testLinkedInPageTitle()[pri:0, instance:elitecareer.framework.tests.HomePageTest@79845505]" name="testLinkedInPageTitle" duration-ms="360" started-at="2015-02-27T19:24:26Z" finished-at="2015-02-27T19:24:26Z">
+        <test-method status="PASS" signature="testLinkedInPageTitle()[pri:0, instance:elitecareer.framework.tests.HomePageTest@5f3c750c]" name="testLinkedInPageTitle" duration-ms="395" started-at="2015-04-16T19:20:57Z" finished-at="2015-04-16T19:20:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLinkedInPageTitle -->
-        <test-method status="PASS" signature="testFacebookPageTitle()[pri:0, instance:elitecareer.framework.tests.HomePageTest@79845505]" name="testFacebookPageTitle" duration-ms="93" started-at="2015-02-27T19:24:26Z" finished-at="2015-02-27T19:24:26Z">
+        <test-method status="FAIL" signature="testFacebookPageTitle()[pri:0, instance:elitecareer.framework.tests.HomePageTest@5f3c750c]" name="testFacebookPageTitle" duration-ms="440" started-at="2015-04-16T19:20:57Z" finished-at="2015-04-16T19:20:58Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Facebook Pagee] but found [Facebook Page]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Facebook Pagee] but found [Facebook Page]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at elitecareer.framework.tests.HomePageTest.testFacebookPageTitle(HomePageTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFacebookPageTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:elitecareer.framework.tests.HomePageTest@79845505]" name="tearDown" is-config="true" duration-ms="94" started-at="2015-02-27T19:24:26Z" finished-at="2015-02-27T19:24:26Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:elitecareer.framework.tests.HomePageTest@5f3c750c]" name="tearDown" is-config="true" duration-ms="456" started-at="2015-04-16T19:20:58Z" finished-at="2015-04-16T19:20:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- elitecareer.framework.tests.HomePageTest -->
-    </test> <!-- Default test1 -->
-    <test name="Default test2" duration-ms="65422" started-at="2015-02-28T00:24:27Z" finished-at="2015-02-28T00:25:32Z">
-      <class name="elitecareer.framework.tests.SignInPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="setUp" is-config="true" duration-ms="7654" started-at="2015-02-27T19:24:27Z" finished-at="2015-02-27T19:24:34Z">
+      <class name="elitecareer.framework.tests.UpdatePersonalInformationPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="setUp" is-config="true" duration-ms="30060" started-at="2015-04-16T19:30:19Z" finished-at="2015-04-16T19:30:49Z">
           <params>
             <param index="0">
               <value>
@@ -75,23 +269,101 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSignInPageTitle()[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testSignInPageTitle" duration-ms="934" started-at="2015-02-27T19:24:34Z" finished-at="2015-02-27T19:24:35Z">
+        <test-method status="PASS" signature="testEditPersonalInformationLink()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="testEditPersonalInformationLink" duration-ms="4121" started-at="2015-04-16T19:30:49Z" finished-at="2015-04-16T19:30:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditPersonalInformationLink -->
+        <test-method status="PASS" signature="testPageTitle()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="testPageTitle" duration-ms="257" started-at="2015-04-16T19:30:53Z" finished-at="2015-04-16T19:30:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageTitle -->
+        <test-method status="PASS" signature="testUpdatePersonalInformationTitle()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="testUpdatePersonalInformationTitle" duration-ms="161" started-at="2015-04-16T19:30:53Z" finished-at="2015-04-16T19:30:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdatePersonalInformationTitle -->
+        <test-method status="PASS" signature="testFirstNameFieldBellowLowerBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="testFirstNameFieldBellowLowerBoundary" duration-ms="1574" started-at="2015-04-16T19:30:53Z" finished-at="2015-04-16T19:30:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstNameFieldBellowLowerBoundary -->
+        <test-method status="PASS" signature="testFirstNameFieldLowerBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="testFirstNameFieldLowerBoundary" duration-ms="3243" started-at="2015-04-16T19:30:55Z" finished-at="2015-04-16T19:30:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstNameFieldLowerBoundary -->
+        <test-method status="PASS" signature="testFirstNameFieldAboveUpperBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="testFirstNameFieldAboveUpperBoundary" duration-ms="2120" started-at="2015-04-16T19:30:58Z" finished-at="2015-04-16T19:31:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstNameFieldAboveUpperBoundary -->
+        <test-method status="PASS" signature="testFirstNameFieldUpperBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="testFirstNameFieldUpperBoundary" duration-ms="4470" started-at="2015-04-16T19:31:00Z" finished-at="2015-04-16T19:31:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstNameFieldUpperBoundary -->
+        <test-method status="PASS" signature="testLastNameFieldBellowLowerBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="testLastNameFieldBellowLowerBoundary" duration-ms="2886" started-at="2015-04-16T19:31:05Z" finished-at="2015-04-16T19:31:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLastNameFieldBellowLowerBoundary -->
+        <test-method status="PASS" signature="testLastNameFieldLowerBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="testLastNameFieldLowerBoundary" duration-ms="3350" started-at="2015-04-16T19:31:07Z" finished-at="2015-04-16T19:31:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLastNameFieldLowerBoundary -->
+        <test-method status="PASS" signature="testLastNameFieldAboveUpperBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="testLastNameFieldAboveUpperBoundary" duration-ms="18214" started-at="2015-04-16T19:31:11Z" finished-at="2015-04-16T19:31:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLastNameFieldAboveUpperBoundary -->
+        <test-method status="PASS" signature="testLastNameFieldUpperBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="testLastNameFieldUpperBoundary" duration-ms="3383" started-at="2015-04-16T19:31:29Z" finished-at="2015-04-16T19:31:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLastNameFieldUpperBoundary -->
+        <test-method status="PASS" signature="testDateOfBirthFieldWithInvalidInput()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="testDateOfBirthFieldWithInvalidInput" duration-ms="3268" started-at="2015-04-16T19:31:32Z" finished-at="2015-04-16T19:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateOfBirthFieldWithInvalidInput -->
+        <test-method status="PASS" signature="testDateOfBirthFieldWithValidInput()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="testDateOfBirthFieldWithValidInput" duration-ms="2198" started-at="2015-04-16T19:31:36Z" finished-at="2015-04-16T19:31:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateOfBirthFieldWithValidInput -->
+        <test-method status="PASS" signature="testUpdateWithAllValidData()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="testUpdateWithAllValidData" duration-ms="3785" started-at="2015-04-16T19:31:38Z" finished-at="2015-04-16T19:31:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateWithAllValidData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@2588b2da]" name="tearDown" is-config="true" duration-ms="448" started-at="2015-04-16T19:31:42Z" finished-at="2015-04-16T19:31:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- elitecareer.framework.tests.UpdatePersonalInformationPageTest -->
+      <class name="elitecareer.framework.tests.SignInPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="setUp" is-config="true" duration-ms="51563" started-at="2015-04-16T19:27:45Z" finished-at="2015-04-16T19:28:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost:8788/elitecareer/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSignInPageTitle()[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testSignInPageTitle" duration-ms="3284" started-at="2015-04-16T19:28:37Z" finished-at="2015-04-16T19:28:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignInPageTitle -->
-        <test-method status="PASS" signature="testSignInPageUrl()[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testSignInPageUrl" duration-ms="170" started-at="2015-02-27T19:24:35Z" finished-at="2015-02-27T19:24:35Z">
+        <test-method status="PASS" signature="testSignInPageUrl()[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testSignInPageUrl" duration-ms="286" started-at="2015-04-16T19:28:40Z" finished-at="2015-04-16T19:28:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignInPageUrl -->
-        <test-method status="PASS" signature="testSignInTitle()[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testSignInTitle" duration-ms="1696" started-at="2015-02-27T19:24:35Z" finished-at="2015-02-27T19:24:37Z">
+        <test-method status="PASS" signature="testSignInTitle()[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testSignInTitle" duration-ms="400" started-at="2015-04-16T19:28:40Z" finished-at="2015-04-16T19:28:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignInTitle -->
-        <test-method status="PASS" signature="testSignInWithEmptyCredentials()[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testSignInWithEmptyCredentials" duration-ms="1539" started-at="2015-02-27T19:24:37Z" finished-at="2015-02-27T19:24:39Z">
+        <test-method status="PASS" signature="testSignInWithEmptyCredentials()[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testSignInWithEmptyCredentials" duration-ms="7178" started-at="2015-04-16T19:28:41Z" finished-at="2015-04-16T19:28:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignInWithEmptyCredentials -->
-        <test-method status="PASS" signature="testEmailFieldWithWrongEmail(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testEmailFieldWithWrongEmail" duration-ms="5428" started-at="2015-02-27T19:24:39Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:24:45Z">
+        <test-method status="PASS" signature="testEmailFieldWithWrongEmail(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testEmailFieldWithWrongEmail" duration-ms="2900" started-at="2015-04-16T19:28:50Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:28:52Z">
           <params>
             <param index="0">
               <value>
@@ -107,7 +379,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmailFieldWithWrongEmail -->
-        <test-method status="PASS" signature="testEmailFieldWithWrongEmail(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testEmailFieldWithWrongEmail" duration-ms="2815" started-at="2015-02-27T19:24:45Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:24:47Z">
+        <test-method status="PASS" signature="testEmailFieldWithWrongEmail(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testEmailFieldWithWrongEmail" duration-ms="3641" started-at="2015-04-16T19:28:52Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:28:56Z">
           <params>
             <param index="0">
               <value>
@@ -123,7 +395,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmailFieldWithWrongEmail -->
-        <test-method status="PASS" signature="testEmailFieldWithEmptyEmail(java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testEmailFieldWithEmptyEmail" duration-ms="2883" started-at="2015-02-27T19:24:47Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:24:50Z">
+        <test-method status="PASS" signature="testEmailFieldWithEmptyEmail(java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testEmailFieldWithEmptyEmail" duration-ms="2692" started-at="2015-04-16T19:28:56Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:28:59Z">
           <params>
             <param index="0">
               <value>
@@ -134,7 +406,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmailFieldWithEmptyEmail -->
-        <test-method status="PASS" signature="testEmailFieldWithEmptyEmail(java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testEmailFieldWithEmptyEmail" duration-ms="2801" started-at="2015-02-27T19:24:50Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:24:53Z">
+        <test-method status="PASS" signature="testEmailFieldWithEmptyEmail(java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testEmailFieldWithEmptyEmail" duration-ms="3218" started-at="2015-04-16T19:28:59Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:29:02Z">
           <params>
             <param index="0">
               <value>
@@ -145,7 +417,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmailFieldWithEmptyEmail -->
-        <test-method status="PASS" signature="testPasswordFieldWithWrongPassword(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testPasswordFieldWithWrongPassword" duration-ms="5832" started-at="2015-02-27T19:24:53Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:24:59Z">
+        <test-method status="PASS" signature="testPasswordFieldWithWrongPassword(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testPasswordFieldWithWrongPassword" duration-ms="3756" started-at="2015-04-16T19:29:02Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:29:06Z">
           <params>
             <param index="0">
               <value>
@@ -161,7 +433,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPasswordFieldWithWrongPassword -->
-        <test-method status="PASS" signature="testPasswordFieldWithWrongPassword(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testPasswordFieldWithWrongPassword" duration-ms="2469" started-at="2015-02-27T19:24:59Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:25:01Z">
+        <test-method status="PASS" signature="testPasswordFieldWithWrongPassword(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testPasswordFieldWithWrongPassword" duration-ms="4374" started-at="2015-04-16T19:29:06Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:29:10Z">
           <params>
             <param index="0">
               <value>
@@ -177,7 +449,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPasswordFieldWithWrongPassword -->
-        <test-method status="PASS" signature="testPasswordFieldWithWrongPassword(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testPasswordFieldWithWrongPassword" duration-ms="1868" started-at="2015-02-27T19:25:01Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:25:03Z">
+        <test-method status="PASS" signature="testPasswordFieldWithWrongPassword(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testPasswordFieldWithWrongPassword" duration-ms="3118" started-at="2015-04-16T19:29:10Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:29:13Z">
           <params>
             <param index="0">
               <value>
@@ -193,7 +465,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPasswordFieldWithWrongPassword -->
-        <test-method status="PASS" signature="testPasswordFieldWithWrongPassword(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testPasswordFieldWithWrongPassword" duration-ms="1405" started-at="2015-02-27T19:25:03Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:25:05Z">
+        <test-method status="PASS" signature="testPasswordFieldWithWrongPassword(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testPasswordFieldWithWrongPassword" duration-ms="3055" started-at="2015-04-16T19:29:13Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:29:16Z">
           <params>
             <param index="0">
               <value>
@@ -209,7 +481,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPasswordFieldWithWrongPassword -->
-        <test-method status="PASS" signature="testPasswordFieldWithWrongPassword(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testPasswordFieldWithWrongPassword" duration-ms="1539" started-at="2015-02-27T19:25:05Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:25:06Z">
+        <test-method status="PASS" signature="testPasswordFieldWithWrongPassword(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testPasswordFieldWithWrongPassword" duration-ms="5684" started-at="2015-04-16T19:29:16Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:29:22Z">
           <params>
             <param index="0">
               <value>
@@ -225,7 +497,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPasswordFieldWithWrongPassword -->
-        <test-method status="PASS" signature="testPasswordFieldWithEmptyPassword(java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testPasswordFieldWithEmptyPassword" duration-ms="1715" started-at="2015-02-27T19:25:06Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:25:08Z">
+        <test-method status="PASS" signature="testPasswordFieldWithEmptyPassword(java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testPasswordFieldWithEmptyPassword" duration-ms="5387" started-at="2015-04-16T19:29:22Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:29:28Z">
           <params>
             <param index="0">
               <value>
@@ -236,7 +508,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPasswordFieldWithEmptyPassword -->
-        <test-method status="PASS" signature="testPasswordFieldWithEmptyPassword(java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testPasswordFieldWithEmptyPassword" duration-ms="1965" started-at="2015-02-27T19:25:08Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:25:10Z">
+        <test-method status="PASS" signature="testPasswordFieldWithEmptyPassword(java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testPasswordFieldWithEmptyPassword" duration-ms="4356" started-at="2015-04-16T19:29:28Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:29:32Z">
           <params>
             <param index="0">
               <value>
@@ -247,7 +519,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPasswordFieldWithEmptyPassword -->
-        <test-method status="PASS" signature="testPasswordFieldWithEmptyPassword(java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testPasswordFieldWithEmptyPassword" duration-ms="1525" started-at="2015-02-27T19:25:10Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:25:12Z">
+        <test-method status="PASS" signature="testPasswordFieldWithEmptyPassword(java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testPasswordFieldWithEmptyPassword" duration-ms="3616" started-at="2015-04-16T19:29:32Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:29:36Z">
           <params>
             <param index="0">
               <value>
@@ -258,7 +530,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPasswordFieldWithEmptyPassword -->
-        <test-method status="PASS" signature="testPasswordFieldWithEmptyPassword(java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testPasswordFieldWithEmptyPassword" duration-ms="1856" started-at="2015-02-27T19:25:12Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:25:13Z">
+        <test-method status="PASS" signature="testPasswordFieldWithEmptyPassword(java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testPasswordFieldWithEmptyPassword" duration-ms="4792" started-at="2015-04-16T19:29:36Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:29:40Z">
           <params>
             <param index="0">
               <value>
@@ -269,7 +541,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPasswordFieldWithEmptyPassword -->
-        <test-method status="PASS" signature="testPasswordFieldWithEmptyPassword(java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testPasswordFieldWithEmptyPassword" duration-ms="1814" started-at="2015-02-27T19:25:13Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:25:15Z">
+        <test-method status="PASS" signature="testPasswordFieldWithEmptyPassword(java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testPasswordFieldWithEmptyPassword" duration-ms="3080" started-at="2015-04-16T19:29:40Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:29:43Z">
           <params>
             <param index="0">
               <value>
@@ -280,7 +552,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPasswordFieldWithEmptyPassword -->
-        <test-method status="PASS" signature="testSignInWithCorrectCredentials(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testSignInWithCorrectCredentials" duration-ms="6585" started-at="2015-02-27T19:25:15Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:25:22Z">
+        <test-method status="PASS" signature="testSignInWithCorrectCredentials(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testSignInWithCorrectCredentials" duration-ms="22144" started-at="2015-04-16T19:29:43Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:30:06Z">
           <params>
             <param index="0">
               <value>
@@ -296,7 +568,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignInWithCorrectCredentials -->
-        <test-method status="PASS" signature="testSignInWithCorrectCredentials(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="testSignInWithCorrectCredentials" duration-ms="8747" started-at="2015-02-27T19:25:22Z" data-provider="signInPageDataProvider" finished-at="2015-02-27T19:25:31Z">
+        <test-method status="PASS" signature="testSignInWithCorrectCredentials(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="testSignInWithCorrectCredentials" duration-ms="12006" started-at="2015-04-16T19:30:06Z" data-provider="signInPageDataProvider" finished-at="2015-04-16T19:30:18Z">
           <params>
             <param index="0">
               <value>
@@ -312,135 +584,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignInWithCorrectCredentials -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:elitecareer.framework.tests.SignInPageTest@5b4bf56d]" name="tearDown" is-config="true" duration-ms="1450" started-at="2015-02-27T19:25:31Z" finished-at="2015-02-27T19:25:32Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:elitecareer.framework.tests.SignInPageTest@7561ab68]" name="tearDown" is-config="true" duration-ms="992" started-at="2015-04-16T19:30:18Z" finished-at="2015-04-16T19:30:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- elitecareer.framework.tests.SignInPageTest -->
-    </test> <!-- Default test2 -->
-    <test name="Default test3" duration-ms="102326" started-at="2015-02-28T00:25:32Z" finished-at="2015-02-28T00:27:15Z">
-      <class name="elitecareer.framework.tests.RegisterPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="setUp" is-config="true" duration-ms="35879" started-at="2015-02-27T19:25:32Z" finished-at="2015-02-27T19:26:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[http://localhost:8788/elitecareer/index.php]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testRegisterPageTitle()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testRegisterPageTitle" duration-ms="5402" started-at="2015-02-27T19:26:08Z" finished-at="2015-02-27T19:26:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegisterPageTitle -->
-        <test-method status="PASS" signature="testRegisterPageUrl()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testRegisterPageUrl" duration-ms="142" started-at="2015-02-27T19:26:13Z" finished-at="2015-02-27T19:26:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegisterPageUrl -->
-        <test-method status="PASS" signature="testRegisterTitle()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testRegisterTitle" duration-ms="146" started-at="2015-02-27T19:26:14Z" finished-at="2015-02-27T19:26:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegisterTitle -->
-        <test-method status="PASS" signature="testEmptyFormSublission()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testEmptyFormSublission" duration-ms="12383" started-at="2015-02-27T19:26:14Z" finished-at="2015-02-27T19:26:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEmptyFormSublission -->
-        <test-method status="PASS" signature="testFirstNameFieldBellowLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testFirstNameFieldBellowLowerBoundary" duration-ms="2324" started-at="2015-02-27T19:26:26Z" finished-at="2015-02-27T19:26:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFirstNameFieldBellowLowerBoundary -->
-        <test-method status="PASS" signature="testFirstNameFieldLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testFirstNameFieldLowerBoundary" duration-ms="2662" started-at="2015-02-27T19:26:28Z" finished-at="2015-02-27T19:26:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFirstNameFieldLowerBoundary -->
-        <test-method status="PASS" signature="testFirstNameFieldAboveUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testFirstNameFieldAboveUpperBoundary" duration-ms="1992" started-at="2015-02-27T19:26:31Z" finished-at="2015-02-27T19:26:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFirstNameFieldAboveUpperBoundary -->
-        <test-method status="PASS" signature="testFirstNameFieldUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testFirstNameFieldUpperBoundary" duration-ms="3282" started-at="2015-02-27T19:26:33Z" finished-at="2015-02-27T19:26:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFirstNameFieldUpperBoundary -->
-        <test-method status="PASS" signature="testLastNameFieldBellowLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testLastNameFieldBellowLowerBoundary" duration-ms="2139" started-at="2015-02-27T19:26:36Z" finished-at="2015-02-27T19:26:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLastNameFieldBellowLowerBoundary -->
-        <test-method status="PASS" signature="testLastNameFieldLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testLastNameFieldLowerBoundary" duration-ms="1625" started-at="2015-02-27T19:26:39Z" finished-at="2015-02-27T19:26:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLastNameFieldLowerBoundary -->
-        <test-method status="PASS" signature="testLastNameFieldAboveUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testLastNameFieldAboveUpperBoundary" duration-ms="1781" started-at="2015-02-27T19:26:40Z" finished-at="2015-02-27T19:26:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLastNameFieldAboveUpperBoundary -->
-        <test-method status="PASS" signature="testLastNameFieldUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testLastNameFieldUpperBoundary" duration-ms="2416" started-at="2015-02-27T19:26:42Z" finished-at="2015-02-27T19:26:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLastNameFieldUpperBoundary -->
-        <test-method status="PASS" signature="testDateOfBirthFieldWithInvalidInput()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testDateOfBirthFieldWithInvalidInput" duration-ms="1595" started-at="2015-02-27T19:26:44Z" finished-at="2015-02-27T19:26:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDateOfBirthFieldWithInvalidInput -->
-        <test-method status="PASS" signature="testDateOfBirthFieldWithValidInput()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testDateOfBirthFieldWithValidInput" duration-ms="1709" started-at="2015-02-27T19:26:46Z" finished-at="2015-02-27T19:26:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDateOfBirthFieldWithValidInput -->
-        <test-method status="PASS" signature="testPhoneNoFieldBellowLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testPhoneNoFieldBellowLowerBoundary" duration-ms="2591" started-at="2015-02-27T19:26:48Z" finished-at="2015-02-27T19:26:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPhoneNoFieldBellowLowerBoundary -->
-        <test-method status="PASS" signature="testPhoneNoFieldLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testPhoneNoFieldLowerBoundary" duration-ms="2374" started-at="2015-02-27T19:26:50Z" finished-at="2015-02-27T19:26:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPhoneNoFieldLowerBoundary -->
-        <test-method status="PASS" signature="testPhoneNoFieldAboveUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testPhoneNoFieldAboveUpperBoundary" duration-ms="2597" started-at="2015-02-27T19:26:53Z" finished-at="2015-02-27T19:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPhoneNoFieldAboveUpperBoundary -->
-        <test-method status="PASS" signature="testPhoneNoFieldUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testPhoneNoFieldUpperBoundary" duration-ms="2167" started-at="2015-02-27T19:26:55Z" finished-at="2015-02-27T19:26:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPhoneNoFieldUpperBoundary -->
-        <test-method status="PASS" signature="testEmailFieldIfAlreadyRegistered()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testEmailFieldIfAlreadyRegistered" duration-ms="2326" started-at="2015-02-27T19:26:57Z" finished-at="2015-02-27T19:27:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEmailFieldIfAlreadyRegistered -->
-        <test-method status="PASS" signature="testPasswordFieldBellowLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testPasswordFieldBellowLowerBoundary" duration-ms="3683" started-at="2015-02-27T19:27:00Z" finished-at="2015-02-27T19:27:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPasswordFieldBellowLowerBoundary -->
-        <test-method status="PASS" signature="testPasswordFieldLowerBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testPasswordFieldLowerBoundary" duration-ms="3535" started-at="2015-02-27T19:27:03Z" finished-at="2015-02-27T19:27:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPasswordFieldLowerBoundary -->
-        <test-method status="PASS" signature="testPasswordFieldAboveUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testPasswordFieldAboveUpperBoundary" duration-ms="1637" started-at="2015-02-27T19:27:07Z" finished-at="2015-02-27T19:27:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPasswordFieldAboveUpperBoundary -->
-        <test-method status="PASS" signature="testPasswordFieldUpperBoundary()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testPasswordFieldUpperBoundary" duration-ms="2889" started-at="2015-02-27T19:27:09Z" finished-at="2015-02-27T19:27:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPasswordFieldUpperBoundary -->
-        <test-method status="PASS" signature="testPasswordAndConfirmPasswordFieldsIfDoNotMatch()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="testPasswordAndConfirmPasswordFieldsIfDoNotMatch" duration-ms="2049" started-at="2015-02-27T19:27:11Z" finished-at="2015-02-27T19:27:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPasswordAndConfirmPasswordFieldsIfDoNotMatch -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:elitecareer.framework.tests.RegisterPageTest@23536fd]" name="tearDown" is-config="true" duration-ms="973" started-at="2015-02-27T19:27:14Z" finished-at="2015-02-27T19:27:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- elitecareer.framework.tests.RegisterPageTest -->
-    </test> <!-- Default test3 -->
-    <test name="Default test4" duration-ms="50013" started-at="2015-02-28T00:27:17Z" finished-at="2015-02-28T00:28:07Z">
       <class name="elitecareer.framework.tests.JobseekerProfilePageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.JobseekerProfilePageTest@3f8c2858]" name="setUp" is-config="true" duration-ms="37030" started-at="2015-02-27T19:27:17Z" finished-at="2015-02-27T19:27:54Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.JobseekerProfilePageTest@1e72f580]" name="setUp" is-config="true" duration-ms="60385" started-at="2015-04-16T19:20:59Z" finished-at="2015-04-16T19:21:59Z">
           <params>
             <param index="0">
               <value>
@@ -456,103 +606,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testJobseekerProfileTitle()[pri:0, instance:elitecareer.framework.tests.JobseekerProfilePageTest@3f8c2858]" name="testJobseekerProfileTitle" duration-ms="12444" started-at="2015-02-27T19:27:54Z" finished-at="2015-02-27T19:28:06Z">
+        <test-method status="PASS" signature="testJobseekerProfileTitle()[pri:0, instance:elitecareer.framework.tests.JobseekerProfilePageTest@1e72f580]" name="testJobseekerProfileTitle" duration-ms="31959" started-at="2015-04-16T19:21:59Z" finished-at="2015-04-16T19:22:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testJobseekerProfileTitle -->
-        <test-method status="PASS" signature="testProfilePageLink()[pri:0, instance:elitecareer.framework.tests.JobseekerProfilePageTest@3f8c2858]" name="testProfilePageLink" duration-ms="37" started-at="2015-02-27T19:28:06Z" finished-at="2015-02-27T19:28:06Z">
+        <test-method status="PASS" signature="testProfilePageLink()[pri:0, instance:elitecareer.framework.tests.JobseekerProfilePageTest@1e72f580]" name="testProfilePageLink" duration-ms="202" started-at="2015-04-16T19:22:31Z" finished-at="2015-04-16T19:22:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProfilePageLink -->
-        <test-method status="PASS" signature="testProfileMenuTitle()[pri:0, instance:elitecareer.framework.tests.JobseekerProfilePageTest@3f8c2858]" name="testProfileMenuTitle" duration-ms="31" started-at="2015-02-27T19:28:06Z" finished-at="2015-02-27T19:28:06Z">
+        <test-method status="PASS" signature="testProfileMenuTitle()[pri:0, instance:elitecareer.framework.tests.JobseekerProfilePageTest@1e72f580]" name="testProfileMenuTitle" duration-ms="336" started-at="2015-04-16T19:22:31Z" finished-at="2015-04-16T19:22:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProfileMenuTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:elitecareer.framework.tests.JobseekerProfilePageTest@3f8c2858]" name="tearDown" is-config="true" duration-ms="466" started-at="2015-02-27T19:28:06Z" finished-at="2015-02-27T19:28:07Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:elitecareer.framework.tests.JobseekerProfilePageTest@1e72f580]" name="tearDown" is-config="true" duration-ms="1708" started-at="2015-04-16T19:22:32Z" finished-at="2015-04-16T19:22:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="sendMail()[pri:0, instance:elitecareer.framework.tests.JobseekerProfilePageTest@1e72f580]" name="sendMail" is-config="true" duration-ms="11917" started-at="2015-04-16T19:31:48Z" finished-at="2015-04-16T19:32:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMail -->
       </class> <!-- elitecareer.framework.tests.JobseekerProfilePageTest -->
-    </test> <!-- Default test4 -->
-    <test name="Default test5" duration-ms="40226" started-at="2015-02-28T00:28:07Z" finished-at="2015-02-28T00:28:47Z">
-      <class name="elitecareer.framework.tests.UpdatePersonalInformationPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="setUp" is-config="true" duration-ms="15127" started-at="2015-02-27T19:28:07Z" finished-at="2015-02-27T19:28:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[http://localhost:8788/elitecareer/index.php]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testEditPersonalInformationLink()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="testEditPersonalInformationLink" duration-ms="4332" started-at="2015-02-27T19:28:22Z" finished-at="2015-02-27T19:28:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEditPersonalInformationLink -->
-        <test-method status="PASS" signature="testPageTitle()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="testPageTitle" duration-ms="63" started-at="2015-02-27T19:28:26Z" finished-at="2015-02-27T19:28:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPageTitle -->
-        <test-method status="PASS" signature="testUpdatePersonalInformationTitle()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="testUpdatePersonalInformationTitle" duration-ms="47" started-at="2015-02-27T19:28:26Z" finished-at="2015-02-27T19:28:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUpdatePersonalInformationTitle -->
-        <test-method status="PASS" signature="testFirstNameFieldBellowLowerBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="testFirstNameFieldBellowLowerBoundary" duration-ms="1477" started-at="2015-02-27T19:28:26Z" finished-at="2015-02-27T19:28:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFirstNameFieldBellowLowerBoundary -->
-        <test-method status="PASS" signature="testFirstNameFieldLowerBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="testFirstNameFieldLowerBoundary" duration-ms="3437" started-at="2015-02-27T19:28:28Z" finished-at="2015-02-27T19:28:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFirstNameFieldLowerBoundary -->
-        <test-method status="PASS" signature="testFirstNameFieldAboveUpperBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="testFirstNameFieldAboveUpperBoundary" duration-ms="2229" started-at="2015-02-27T19:28:31Z" finished-at="2015-02-27T19:28:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFirstNameFieldAboveUpperBoundary -->
-        <test-method status="PASS" signature="testFirstNameFieldUpperBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="testFirstNameFieldUpperBoundary" duration-ms="2466" started-at="2015-02-27T19:28:33Z" finished-at="2015-02-27T19:28:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFirstNameFieldUpperBoundary -->
-        <test-method status="PASS" signature="testLastNameFieldBellowLowerBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="testLastNameFieldBellowLowerBoundary" duration-ms="1188" started-at="2015-02-27T19:28:36Z" finished-at="2015-02-27T19:28:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLastNameFieldBellowLowerBoundary -->
-        <test-method status="PASS" signature="testLastNameFieldLowerBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="testLastNameFieldLowerBoundary" duration-ms="2023" started-at="2015-02-27T19:28:37Z" finished-at="2015-02-27T19:28:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLastNameFieldLowerBoundary -->
-        <test-method status="PASS" signature="testLastNameFieldAboveUpperBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="testLastNameFieldAboveUpperBoundary" duration-ms="1121" started-at="2015-02-27T19:28:39Z" finished-at="2015-02-27T19:28:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLastNameFieldAboveUpperBoundary -->
-        <test-method status="PASS" signature="testLastNameFieldUpperBoundary()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="testLastNameFieldUpperBoundary" duration-ms="1168" started-at="2015-02-27T19:28:40Z" finished-at="2015-02-27T19:28:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLastNameFieldUpperBoundary -->
-        <test-method status="PASS" signature="testDateOfBirthFieldWithInvalidInput()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="testDateOfBirthFieldWithInvalidInput" duration-ms="1136" started-at="2015-02-27T19:28:41Z" finished-at="2015-02-27T19:28:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDateOfBirthFieldWithInvalidInput -->
-        <test-method status="PASS" signature="testDateOfBirthFieldWithValidInput()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="testDateOfBirthFieldWithValidInput" duration-ms="1596" started-at="2015-02-27T19:28:43Z" finished-at="2015-02-27T19:28:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDateOfBirthFieldWithValidInput -->
-        <test-method status="PASS" signature="testUpdateWithAllValidData()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="testUpdateWithAllValidData" duration-ms="2151" started-at="2015-02-27T19:28:44Z" finished-at="2015-02-27T19:28:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUpdateWithAllValidData -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:elitecareer.framework.tests.UpdatePersonalInformationPageTest@4c570021]" name="tearDown" is-config="true" duration-ms="649" started-at="2015-02-27T19:28:46Z" finished-at="2015-02-27T19:28:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- elitecareer.framework.tests.UpdatePersonalInformationPageTest -->
-    </test> <!-- Default test5 -->
+    </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

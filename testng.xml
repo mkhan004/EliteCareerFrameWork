@@ -1,50 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Default suite" thread-count="5" parallel="classes"
-	preserve-order="true">
+<suite name="Default suite" thread-count="5" preserve-order="true">
 
 	<parameter name="appURL" value="http://localhost:8788/elitecareer/index.php" />
 	<parameter name="browserType" value="firefox" />
 	<listeners>
-		<listener class-name="elitecareer.framework.listener.TestListener" />
+		<!-- listener class-name="elitecareer.framework.listener.JyperionListener" /-->
+		<!-- listener class-name="elitecareer.framework.listener.PassedTestReport" /-->
+		<!-- listener class-name="elitecareer.framework.listener.TestReporter" /-->
 	</listeners>
 
-	<test verbose="2" name="Default test1">
+	<test verbose="2" name="Default test" preserve-order="true">
 		<!--groups>
 			<run>
 				<include name="Regression"></include>
 			</run>
 		</groups-->
-		<classes>
-			<class name="elitecareer.framework.tests.HomePageTest" />
-		</classes>
+		<packages>
+			<package name="elitecareer.framework.tests" />
+		</packages>
 	</test>
+	
 
-	<test verbose="2" name="Default test2">
-		<classes>
-			<class name="elitecareer.framework.tests.SignInPageTest" />
-		</classes>
-	</test>
-
-	<test verbose="2" name="Default test3">
-		<classes>
-			<class name="elitecareer.framework.tests.RegisterPageTest" />
-		</classes>
-	</test>
-
-	<test verbose="2" name="Default test4">
-		<classes>
-			<class name="elitecareer.framework.tests.JobseekerProfilePageTest" />
-		</classes>
-	</test>
-
-	<test verbose="2" name="Default test5">
-		<classes>
-			<class
-				name="elitecareer.framework.tests.UpdatePersonalInformationPageTest" />
-		</classes>
-	</test>
-
+	
 
 </suite>
             

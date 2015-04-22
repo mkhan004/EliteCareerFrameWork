@@ -6,8 +6,10 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
+import org.testng.annotations.AfterTest;
 
 import elitecareer.framework.base.TestBase;
 
@@ -35,6 +37,20 @@ public class TestListener extends TestListenerAdapter {
 			System.out.println("Screenshot can be found : " + imagePath);
 		}
 	}
+	
+	public void onTestSuccess(ITestResult result) {
+		String testClassName = getTestClassName(result.getInstanceName()).trim();
+		String testTestName = result.getName().toString().trim();
+		long rl = result.getEndMillis() - result.getStartMillis();
+		ITestContext context = result.getTestContext();
+		getTestContexts(context);
+		System.out.println(context+"Shakil Khan: "+ rl +" MiliSeconds: "+ testClassName+" = "+testTestName);
+	}
+	
+	public void getTestContexts(ITestContext context) {
+		//context.getFailedButWithinSuccessPercentageTests();
+		System.out.println("Context: "+context.getSuite().getName());
+		}
 
 	public static String takeScreenShot(WebDriver driver,
 			String screenShotName, String testName) {
