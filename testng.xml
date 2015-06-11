@@ -1,29 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Default suite" thread-count="5" preserve-order="true">
+<suite name="EliteCareer Test Suite" thread-count="5" preserve-order="true">
 
-	<parameter name="appURL" value="http://localhost:8788/elitecareer/index.php" />
+	<parameter name="appURL" value="http://elitecareer.net" />
 	<parameter name="browserType" value="firefox" />
-	<listeners>
-		<!-- listener class-name="elitecareer.framework.listener.JyperionListener" /-->
-		<!-- listener class-name="elitecareer.framework.listener.PassedTestReport" /-->
-		<!-- listener class-name="elitecareer.framework.listener.TestReporter" /-->
-	</listeners>
 
-	<test verbose="2" name="Default test" preserve-order="true">
-		<!--groups>
-			<run>
-				<include name="Regression"></include>
-			</run>
-		</groups-->
+	<test verbose="2" name="Regression Test" preserve-order="true">
 		<packages>
 			<package name="elitecareer.framework.tests" />
 		</packages>
 	</test>
 	
-
-	
-
 </suite>
             
             
