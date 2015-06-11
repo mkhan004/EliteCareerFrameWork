@@ -164,6 +164,7 @@ public class TestBase {
             transport.connect(host, from, pass);
             transport.sendMessage(message, message.getAllRecipients());
             transport.close();
+            System.out.println("PDF Report has been send to your recipient Email address!");
         }
         catch (AddressException ae) {
             ae.printStackTrace();
