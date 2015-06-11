@@ -68,7 +68,7 @@ public class PageBase extends TestBase{
 		int integerValue = Integer.parseInt(stringData);
 		return integerValue;
 	}
-
+	
 	public String convertIntegerToString(Integer integerValue){
 		String newString = String.valueOf(integerValue);
 		return newString;
