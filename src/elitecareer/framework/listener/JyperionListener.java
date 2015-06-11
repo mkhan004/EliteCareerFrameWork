@@ -209,10 +209,7 @@ public class JyperionListener implements ITestListener {
 		        Paragraph  excep = new Paragraph(
 		            throwable.toString(), FontFactory.getFont(FontFactory.HELVETICA, 11, Font.NORMAL, new Color(0, 0, 0)));
 		        excep.add(imdb);
-		       
-			
-			
-			
+		       	
 		
 			//Paragraph excep = new Paragraph(ck.setLocalGoto("" + throwable.hashCode()));
 			cell = new PdfPCell(excep);
@@ -241,7 +238,7 @@ public class JyperionListener implements ITestListener {
 		}
 		this.document.open();
 		
-		Paragraph p = new Paragraph(context.getName() + " TESTNG RESULTS",
+		Paragraph p = new Paragraph(context.getName() + " Results",
 				FontFactory.getFont(FontFactory.HELVETICA, 20, Font.BOLD, new Color(0, 0, 255)));
 		Paragraph p2 = new Paragraph("By: Shakil Khan",
 				FontFactory.getFont(FontFactory.HELVETICA, 12, Font.ITALIC, new Color(0, 0, 0)));
@@ -342,7 +339,7 @@ public class JyperionListener implements ITestListener {
 	public String getTestClassName(String testName) {
 		String[] reqTestClassname = testName.split("\\.");
 		int i = reqTestClassname.length - 1;
-		System.out.println("Required Test Name : " + reqTestClassname[i]);
+		//System.out.println("Required Test Name : " + reqTestClassname[i]);
 		return reqTestClassname[i];
 	}
 	

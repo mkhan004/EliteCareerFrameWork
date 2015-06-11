@@ -26,7 +26,6 @@ public class RegisterPageTest extends TestBase{
 	
 	@Test(priority = 3)
 	public void testEmptyFormSublission(){
-		driver.get("http://localhost:8788/elitecareer/register.php");
 		registerPage.privacyCheckBox.click();
 		registerPage.submitButton.click();
 		Assert.assertEquals(registerPage.getErrorMessageByValue("* FirstName can not be empty."), "* FirstName can not be empty.");

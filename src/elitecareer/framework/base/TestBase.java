@@ -25,7 +25,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 import elitecareer.framework.pages.HomePage;
@@ -60,10 +59,7 @@ public class TestBase {
 			System.out.println("Error....." + e.getStackTrace());
 		}
 		
-		//driver = new FirefoxDriver();
-		// driver.get("http://localhost:8788/elitecareer/");
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		//driver.manage().window().maximize();
 
 		homePage = PageFactory.initElements(driver, HomePage.class);
 		pageHeader = PageFactory.initElements(driver, PageHeader.class);
@@ -118,7 +114,7 @@ public class TestBase {
 	//After complete execution send pdf report by email
 	@AfterSuite
 	public void sendMail(){
-		sendPDFReportByGMail("banglaoutfitters@gmail.com", "01818365827", "nyseekers@gmail.com", "PDF Report", "");
+		sendPDFReportByGMail("banglaoutfitters@gmail.com", "gmail_password", "shakilkhanny@gmail.com", "Regression Test Report", "");
 	}
 	
 	private static void sendPDFReportByGMail(String from, String pass, String to, String subject, String body) {
@@ -153,7 +149,7 @@ public class TestBase {
             objMessageBodyPart = new MimeBodyPart();
 
             //Set path to the pdf report file
-            String filename = System.getProperty("user.dir")+"/Default test.pdf"; 
+            String filename = System.getProperty("user.dir")+"/Regression Test.pdf"; 
             //Create data source to attach the file in mail
             DataSource source = new FileDataSource(filename);
             
